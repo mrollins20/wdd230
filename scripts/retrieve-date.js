@@ -18,4 +18,4 @@ document.getElementById("copyright-year").textContent = `${copyrightYear}`;
 
 document.getElementById("last-modified-date").textContent = 
     `Last Updated: ${modificationMonth}/${modificationDay}/${modificationYear} 
-    ${modificationHours}:${modificationSeconds}:${modificationMiliseconds}`;
+    ${modificationHours}:${modificationSeconds}`;

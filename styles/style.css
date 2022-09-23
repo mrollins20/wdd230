@@ -1,3 +1,14 @@
+
+@font-face {
+    /* 
+    This font was designed by a reddit user credited in the file as meetthesharpies. 
+    They designed this font for use anywhere and anyone.
+    */
+    font-family: 'Logbook Prime v2';
+    src: url('logbook-prime-v2_0.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Play:wght@700&display=swap');
+
 /* Contains all Id Selectors */
 #last-modified-date {
     color: yellow;
@@ -20,7 +31,7 @@
 body {
     background-color: white;
     display: grid;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Logbook Prime v2', Arial, Helvetica, sans-serif;
     justify-items: center;
     margin: auto;
     width: 90%;
@@ -30,7 +41,7 @@ footer {
     border-radius: 10px;
     color: white;
     display: grid;
-    font-size: 24px;
+    font-size: 35px;
     justify-items: center;
     margin: auto;
     padding: 25px;
@@ -38,13 +49,13 @@ footer {
 }
 h1 {
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     grid-column: 2/3;
     margin: auto;
 }
 h2 {
     color: black;
-    font-size: 36px;
+    font-size: 50px;
 }
 header {
     margin: auto;
@@ -56,7 +67,7 @@ img {
 }
 li {
     margin: 15px 0px 15px 0px;
-    font-size: 20px;
+    font-size: 30px;
 }
 main {
     width: 80%;
