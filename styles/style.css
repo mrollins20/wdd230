@@ -7,7 +7,7 @@
     font-family: 'Logbook Prime v2';
     src: url('logbook-prime-v2_0.ttf');
 }
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 
 /* Contains all Id Selectors */
 #last-modified-date {
@@ -31,7 +31,7 @@
 body {
     background-color: white;
     display: grid;
-    font-family: 'Logbook Prime v2', Arial, Helvetica, sans-serif;
+    font-family: 'Logbook Prime v2', 'Roboto', Helvetica, sans-serif;
     justify-items: center;
     margin: auto;
     width: 90%;
