@@ -1,14 +1,14 @@
-@media (min-width: 1700px) {
-    main {
+@media (min-width: 60em) {
+    #content-stream {
         grid-template-columns: 1fr 1fr 1fr;
       }
     .content-box3 {
       display: block;
       grid-column: 3/4;
-      min-width: 0px;
-      max-width: 560px;
+      grid-row: 1/2;
+      width: auto;
     }
     .content-box3 img {
-      width: 540px;
+      max-width: 540px;
     }
 }
