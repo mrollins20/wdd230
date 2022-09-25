@@ -3,6 +3,7 @@
 /* id selectors */
 #last-modified-date {
   color: orange;
+  font-size: 20px;
 }
 /* class selectors */
 .content-box1,
@@ -23,6 +24,7 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   color: orange;
+  font-size: 25px;
   padding: 15px 5px;
   margin: 0px;
 }
