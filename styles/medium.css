@@ -1,0 +1,36 @@
+@font-face {
+    /* 
+    This font was designed by a reddit user credited in the file properties as meetthesharpies. 
+    They designed this font for use anywhere and anyone.
+    */
+    font-family: 'Logbook Prime v2';
+    src: url('logbook-prime-v2_0.ttf');
+}
+@media (min-width: 32.5em) {
+    #last-modified-date {
+        color: orange;
+        font-weight: normal;
+    }
+    #portrait-box {
+        background-color:  grey;
+    }
+    body {
+        font-family: 'Logbook Prime v2', 'Roboto', Helvetica, sans-serif;
+    }
+    footer {
+        background-color: grey;
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 60px;
+        font-weight: normal;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: normal;
+    }
+    li {
+        font-size: 25px;
+        font-weight: normal;
+    }
+}

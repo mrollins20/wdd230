@@ -1,0 +1,14 @@
+@media (min-width: 1700px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    .content-box3 {
+      display: block;
+      grid-column: 3/4;
+      min-width: 0px;
+      max-width: 560px;
+    }
+    .content-box3 img {
+      width: 540px;
+    }
+}

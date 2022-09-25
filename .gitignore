@@ -348,3 +348,10 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+references/
+# references/common-design-mistakes-symmetry.PNG
+# references/common-design-mistakes-colors.PNG
+# references/common-design-mistakes-fonts.PNG
+# references/common-design-mistakes-leading.PNG
+# references/common-design-mistakes-reading-text.PNG
+# references/common-design-mistakes-scaling.PNG
