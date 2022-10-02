@@ -14,11 +14,10 @@
   .content-box1 h2,
   .content-box2 h2,
   .content-box3 h2 {
-    background-color: grey;
+    background-color: var(--secondary-color);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    color: orange;
-    font-size: 18px;
+    font-size: 1.3em;
     padding: 15px 5px;
     margin: 0px;
   }
