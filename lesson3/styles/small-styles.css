@@ -8,8 +8,58 @@ Author: Marc Rollins
     /* Id Selectors */
 
     /* Class Selectors */
-
-    /* Element Selectors */
-
+    .text-table,
+    .text-table tbody,
+    .text-table tr,
+    .text-table td h1 {
+        padding: 0;
+        margin: auto;
+        width: 100%;
+    }
+    .text-table th,
+    .text-table td {
+        width: 25%;
+    }
+    /* Element Selectors*/
+    footer,
+    header,
+    main {
+        width: 100%;
+    }
+    main {
+        margin: 15px 0;
+    }
+    main h1,
+    main h2 {
+        display: block;
+        padding: 0;
+        margin: 15px 0;
+        text-align: center;
+        width: 100%;
+    }
+    main section {
+        width: 100%;
+    }
+    nav {
+        flex-flow: column;
+    }
+    div p {
+        text-align: center;
+    }
+    table,
+    tbody {
+        padding: 0;
+        margin: auto;
+        width: auto;
+    }
+    table,
+    tbody,
+    tr,
+    th,
+    td {
+        border: 3px solid black;
+        font-size: 10px;
+        padding: 0%;
+    }
     /* Interactive Selectors */
 }

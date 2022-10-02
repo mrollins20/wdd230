@@ -110,6 +110,9 @@ header div {
     margin: auto;
     width: 100%;
 }
+img {
+    width: 100%;
+}
 a img {
     background-color: var(--light-neutral-color);
     border-radius: 1em;
@@ -152,6 +155,7 @@ nav {
 }
 nav a {
     align-self: center;
+    background: linear-gradient(90deg, transparent, transparent, transparent) bottom/75% 1px no-repeat;
     color: var(--neutral-color);
     display: block;
     font-size: 1.5em;
@@ -164,25 +168,36 @@ section div {
 }
 table {
     width: 90%;
-}
-table,
-tbody,
-tr,
-th,
-td {
-    border: 3px solid black;
+    border: 5px solid black;
     border-collapse: collapse;
     margin: auto;
+}
+tbody,
+tr,
+td {
+    border: 3px solid black;
+    margin: auto;
+    width: 100%;
 }
 th {
     background-color: var(--light-neutral-color);
     width: 20%;
 }
 td {
-    padding: 15em 2em;
+    padding-bottom: 15em;
+    padding-top: 15em;
+    width: 20%;
 }
 td p {
     margin: auto;
     text-align: center;
 }
 /* Interactive Selectors */
+footer a:hover {
+    color: #466E0A;
+}
+nav a:hover {
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent) bottom/75% 5px no-repeat;
+	transition: 0.5s;
+    z-index: 1;
+}
