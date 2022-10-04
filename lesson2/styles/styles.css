@@ -71,13 +71,17 @@ div {
 footer {
   background-color: grey;
   color: white;
+  margin: auto;
   margin-top: 25px;
-  width: auto;
+  width: 90%;
 }
 h1,
 h2 {
   display: block;
   margin: 15px 5px;
+}
+h2 {
+  text-align: center;
 }
 header {
   background-color: grey;
@@ -86,7 +90,7 @@ header {
   justify-content: center;
   justify-self: center;
   margin: auto;
-  width: 100%;
+  width: 90%;
 }
 img {
   border-bottom: solid 5px var(--accent-color);
