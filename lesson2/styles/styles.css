@@ -1,11 +1,5 @@
 /* imports and font-faces */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-:root {
-  --primary-color: white;
-  --secondary-color: grey;
-  --background-color: lightgrey;
-  --accent-color: orange;
-}
 
 /* id selectors */
 #content-stream {
@@ -17,7 +11,7 @@
   width: 100%;
 }
 #last-modified-date {
-  color: var(--accent-color);
+  color: orange;
   font-size: 20px;
 }
 /* class selectors */
@@ -38,14 +32,14 @@
   background-color: grey;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  color: var(--accent-color);
+  color: orange;
   font-size: 25px;
   padding: 15px 5px;
   margin: 0px;
 }
 /* element selectors */
 a {
-  color: var(--accent-color);
+  color: orange;
   font-size: 1.25em;
   font-weight: bold;
   margin: 15px 5px;
@@ -93,8 +87,8 @@ header {
   width: 90%;
 }
 img {
-  border-bottom: solid 5px var(--accent-color);
-  border-top: solid 5px var(--accent-color);
+  border-bottom: solid 5px orange;
+  border-top: solid 5px orange;
   display: block;
   width: 100%;
   margin: auto;
