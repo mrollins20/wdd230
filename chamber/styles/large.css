@@ -8,9 +8,15 @@
         grid-column: 2/3;
         grid-row: 1/3;
     }
+    .navigation li a {
+        margin: auto 15px;
+    }
     .news {
         grid-column: 2/3;
         grid-row: 3/4;
+    }
+    .socials a {
+        margin: auto;
     }
     .spotlights {
         grid-column: 3/4;
@@ -23,6 +29,10 @@
     }
     .spotlights div:last-child {
         display: block;
+    }
+    .spotlight {
+        margin: auto;
+        padding: 15% 0;
     }
     .join {
         display: block;
