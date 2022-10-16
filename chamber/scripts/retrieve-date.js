@@ -104,3 +104,10 @@ function determineMonth(monthOfYear) {
         return "December"
     }
 }
+// Determine if the day of the week is monday or tuesday and display a special event message.
+if (determineWeekday(dayOfWeek) == "Monday") {
+    document.getElementsByClassName("invite")[0].classList.toggle("toggle-invite");
+}
+else if (determineWeekday(dayOfWeek) == "Tuesday") {
+    document.getElementsByClassName("invite")[0].classList.toggle("toggle-invite");
+}

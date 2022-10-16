@@ -17,23 +17,17 @@
   <body>
     <header>
       <div class="banner">
-        <a href="index.html">
-          <img
-            class="logo"
-            src="images/logo.png"
-            alt="Albany County Chamber of Commerce Logo Image"
-          />
-        </a>
-        <div class="banner-title">
-          <h1>Albany County<br />Chamber of Commerce</h1>
-        </div>
-        <div class="socials">
-          <a href="facebook.com"
-            ><img src="images/facebook.png" alt="facebook logo"
-          /></a>
-          <a href="instagram.com"
-            ><img src="images/instagram.png" alt="instagram logo"
-          /></a>
+        <div class="logo-banner">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="images/logo.png"
+              alt="Albany County Chamber of Commerce Logo Image"
+            />
+          </a>
+          <div class="banner-title">
+            <h1>Albany County<br />Chamber of Commerce</h1>
+          </div>
         </div>
         <nav>
           <ul class="navigation">
@@ -43,6 +37,14 @@
             <li><a href="#">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
+          <div class="socials">
+            <a href="facebook.com"
+              ><img src="images/facebook.png" alt="facebook logo"
+            /></a>
+            <a href="instagram.com"
+              ><img src="images/instagram.png" alt="instagram logo"
+            /></a>
+          </div>
         </nav>
         <div class="date">
           <p class="current-date"></p>
@@ -51,54 +53,83 @@
     </header>
     <main>
       <section class="hero">
-        <p>Hero Img with site name and call to action</p>
+        <h2>Welcome to Albany County!</h2>
+        <img
+          class="responsive"
+          src="images/albany-county-img.jpg"
+          alt="a photo of the albany county court house."
+        />
+        <a href="#" class="button">Join the Chamber</a>
       </section>
       <section class="event">
-        <p>Event</p>
+        <h3>Come see what is happening in your community!</h3>
+        <p class="invite">
+          🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+          p.m.
+        </p>
+        <a href="#" class="button">Events</a>
       </section>
       <section class="weather">
-        <p>Weather</p>
+        <h3>Weather</h3>
+        <img class="responsive" src="images/weather-img.png" alt="" />
       </section>
       <section class="news">
-        <p>News Release</p>
+        <h3>News Release</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+          dolorem, nisi obcaecati adipisci, dolores magni harum laudantium
+          maiores assumenda nulla molestiae quaerat officia modi dolore? Maiores
+          dolor sit quisquam nobis?
+        </p>
       </section>
       <section class="spotlights">
         <div class="spotlight">
-          <p>Spotlight 1</p>
+          <h3>Share Your Story</h3>
+          <!--<img class="responsive2" src="images/spotlight-img.png" alt="" />-->
+          <p>"We have an interest and you have the story!"</p>
+          <div class="divider"></div>
+          <p>share@dailynews.com +(000) 000-0000</p>
         </div>
         <div class="spotlight">
-          <p>Spotlight 2</p>
+          <h3>Rocky Mountain Preserve</h3>
+          <!--<img class="responsive2" src="images/spotlight-img3.png" alt="" />-->
+          <p>Give back to nature.</p>
+          <div class="divider"></div>
+          <p>contact@rmpreserve.com +(000) 000-0000</p>
         </div>
         <div class="spotlight">
-          <p>Spotlight 3</p>
+          <h3>Keep your finances Safe</h3>
+          <!--<img class="responsive2" src="images/spotlight-img2.png" alt="" />-->
+          <p>Choose your number 1 choice for secure banking.</p>
+          <div class="divider"></div>
+          <p>contact@acbanking.com +(000) 000-0000</p>
         </div>
       </section>
       <section class="join">
-        <p>Join</p>
+        <a href="#" class="button">Join Us!</a>
+        <p>Come explore the many ways to help and grow the community!</p>
       </section>
     </main>
     <footer>
       <!--Informational block containing information about the chamber name, my name, project name, and time modified/location.-->
-      <div class="contact">
-        <a href="#">
-          <img
-            class="logo"
-            src="images/logo.png"
-            alt="Albany County Chamber of Commerce Logo Image"
-          />
-        </a>
-        <div>
-          <p class="bold-text">Albany Chamber of Commerce</p>
-          <p>310 S 8th St<br />Laramie, WY 82070</p>
-        </div>
-        <div>
-          <p>info@albanycc.org</p>
-          <p>1+(307) 555-3281</p>
-          <p>&map; <a href="#">Location Map</a></p>
-        </div>
+      <a class="logo-img" href="#">
+        <img
+          class="logo"
+          src="images/logo.png"
+          alt="Albany County Chamber of Commerce Logo Image"
+        />
+      </a>
+      <div class="address-info">
+        <p class="bold-text">Albany Chamber of Commerce</p>
+        <p>310 S 8th St<br />Laramie, WY 82070</p>
       </div>
-      <div class="footer-divide"></div>
-      <div class="copyright">
+      <div class="contact-info">
+        <p>info@albanycc.org</p>
+        <p>1+(307) 555-3281</p>
+        <p><a href="#">&map;Location Map</a></p>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="copyright-info">
         <p>&copy;<span id="copyright-year"></span> Albany Chamber</p>
         <p>Marc Rollins</p>
         <p><a href="../index.html">WDD 230 Project</a></p>
