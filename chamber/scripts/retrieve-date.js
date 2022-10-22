@@ -10,7 +10,8 @@ const currentDateAndTime = new Date();
 let copyrightYear = currentDateAndTime.getFullYear();
 let currentMonth = determineMonth(currentDateAndTime.getMonth());
 let currentDay = currentDateAndTime.getDate();
-let WeekDay = determineWeekday(currentDateAndTime.getDay());
+let weekDayNumber = currentDateAndTime.getDay();
+let weekDay = determineWeekday(weekDayNumber);
 
 //Retrieve the last date that the webpage was modified and convert it into parts.
 let modificationDate = new Date(document.lastModified);
@@ -28,7 +29,7 @@ let modificationSeconds = modificationDate.getSeconds();
 let modifiedSeconds = determineSeconds(modificationSeconds);
 
 //Return the copyright year and Modification date.
-document.querySelector(".current-date").textContent = `${WeekDay}, ${currentDay} ${currentMonth} ${copyrightYear}`
+document.querySelector(".current-date").textContent = `${weekDay}, ${currentDay} ${currentMonth} ${copyrightYear}`
 document.getElementById("copyright-year").textContent = `${copyrightYear}`;
 
 document.getElementById("last-modified-date").textContent = `Last Modification: ${modificationMonth}/${modificationDay}/${modificationYear} ${modificationHours}:${modifiedSeconds}`;
@@ -43,71 +44,64 @@ function determineSeconds(modificationSeconds) {
         return modificationSeconds;
     };
 }
-function determineWeekday(dayOfWeek) {
-    if (dayOfWeek == 0) {
-        return "Sunday"
-    }
-    else if (dayOfWeek == 1) {
-        return "Monday"
-    }
-    else if (dayOfWeek == 2) {
-        return "Tuesday"
-    }
-    else if (dayOfWeek == 3) {
-        return "Wednesday"
-    }
-    else if (dayOfWeek == 4) {
-        return "Thursday"
-    }
-    else if (dayOfWeek == 5) {
-        return "Friday"
-    }
-    else if (dayOfWeek == 6) {
-        return "Saturday"
+function determineWeekday(weekDay) {
+    switch (weekDay) {
+        case 0:
+            return "Sunday";
+        case 1:
+            return "Monday";
+        case 2:
+            return "Tuesday";
+        case 3:
+            return "Wednesday";
+        case 4:
+            return "Thursday";
+        case 5:
+            return "Friday";
+        case 6:
+            return "Saturday";
+        default:
+            break;
     }
 }
 function determineMonth(monthOfYear) {
-    if (monthOfYear == 0) {
-        return "January"
-    }
-    else if (monthOfYear == 1) {
-        return "February"
-    }
-    else if (monthOfYear == 2) {
-        return "March"
-    }
-    else if (monthOfYear == 3) {
-        return "April"
-    }
-    else if (monthOfYear == 4) {
-        return "May"
-    }
-    else if (monthOfYear == 5) {
-        return "June"
-    }
-    else if (monthOfYear == 6) {
-        return "July"
-    }
-    else if (monthOfYear == 7) {
-        return "August"
-    }
-    else if (monthOfYear == 8) {
-        return "September"
-    }
-    else if (monthOfYear == 9) {
-        return "October"
-    }
-    else if (monthOfYear == 10) {
-        return "November"
-    }
-    else if (monthOfYear == 11) {
-        return "December"
+    switch (monthOfYear) {
+        case 0:
+            return "January";
+        case 1:
+            return "February";
+        case 2:
+            return "March";
+        case 3:
+            return "April";
+        case 4:
+            return "May";
+        case 5:
+            return "June";
+        case 6:
+            return "July";
+        case 7:
+            return "August";
+        case 8:
+            return "September";
+        case 9:
+            return "October";
+        case 10:
+            return "November";
+        case 11:
+            return "December";
+        default:
+            break;
     }
 }
 // Determine if the day of the week is monday or tuesday and display a special event message.
-if (determineWeekday(dayOfWeek) == "Monday") {
-    document.getElementsByClassName("invite")[0].classList.toggle("toggle-invite");
-}
-else if (determineWeekday(dayOfWeek) == "Tuesday") {
-    document.getElementsByClassName("invite")[0].classList.toggle("toggle-invite");
+switch (weekDayNumber) {
+    case 1:
+        document.getElementsByClassName("invite")[0].classList.toggle("toggle-invite")//.toggle("invite")
+        break;
+    case 2:
+        document.getElementsByClassName("invite")[0].classList.toggle("toggle-invite")//.toggle("invite")
+        break;
+    default:
+        break;
 }

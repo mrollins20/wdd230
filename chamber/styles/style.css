@@ -11,6 +11,12 @@
     --accent-color2: #b0c6ce;
 }
 /* Id Selectors */
+#invite-banner {
+    background-color: var(--light-neutral-color);
+    color: black;
+    font-size: 2em;
+    padding: .25em 1em;
+}
 /* Class Selectors */
 .button {
     background-color: #6bb300;
@@ -38,6 +44,9 @@
     height: .1em;
     margin: auto;
     width: 75%;
+}
+.invite {
+    display: none;
 }
 .join {
     display: none;
@@ -110,6 +119,9 @@
 }
 .spotlights div:last-child {
     display: none;
+}
+.toggle-invite {
+    display: block;
 }
 /* Element Selectors */
 a {

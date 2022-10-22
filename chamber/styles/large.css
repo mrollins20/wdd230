@@ -32,7 +32,7 @@
     }
     .spotlight {
         margin: auto;
-        padding: 15% 0;
+        padding: 3.5em 0;
     }
     .join {
         display: block;
@@ -72,5 +72,9 @@
     header {
         margin: auto;
         width: 90%;
+    }
+    .logo-banner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
