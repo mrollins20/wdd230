@@ -123,6 +123,13 @@
 .toggle-invite {
     display: block;
 }
+.weather-box {
+    display: grid;
+    font-size: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    text-justify: center;
+}
 /* Element Selectors */
 a {
     color: white;

@@ -59,11 +59,21 @@
     <main>
       <section class="hero">
         <h2>Welcome to Albany County!</h2>
-        <img
-          class="responsive"
-          src="images/albany-county-img.jpg"
-          alt="a photo of the albany county court house."
-        />
+        <picture>
+          <source  
+            srcset="images/wdd230-org-medium.jpg" 
+            media="(min-width: 580px) and (max-width: 939px)"
+          >
+          <source
+            srcset="images/wdd230-org-large.jpg"
+            media="(min-width: 940px)"
+          >
+          <img
+            class="responsive"
+            src="images/wdd230-org-small.jpg"
+            alt="a photo of the albany county court house."
+          />
+        </picture>
         <a href="#" class="button">Join the Chamber</a>
       </section>
       <section class="event">
@@ -72,7 +82,15 @@
       </section>
       <section class="weather">
         <h3>Weather</h3>
-        <img class="responsive" src="images/weather-img.png" alt="" />
+        <div class="weather-box">
+          <img class="responsive" src="images/weather-img.png" alt="" />
+          <h4><span class="temperature">9</span>&deg;C</h4>
+        </div>
+        <span class="sky-state"></span>
+        <div class="divider"></div>
+        <p>Wind Speed: <span class="wind-speed">4.9</span>km/h</p>
+        <p>Wind Chill: <span class="wind-chill"></span>&deg;C</p>
+        <p>Feels Like: <span class="feels-temp"></span>&deg;C</p>
       </section>
       <section class="news">
         <h3>News Release</h3>
@@ -142,5 +160,6 @@
     </footer>
     <script src="scripts/retrieve-date.js" defer></script>
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
   </body>
 </html>
