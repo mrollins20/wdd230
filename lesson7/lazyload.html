@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>progressive loading</title>
+    <meta name="author" content="Marc Rollins" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <header>
+        <nav>
+            <a href="../index.html">Assignment Portal Page</a>
+        </nav>
+    </header>
+    <main>
+      <h1>Progressive Loading (Images)</h1>
+      <article>
+        <img
+          src="https://placeimg.com/300/400/any"
+          data-src="https://placeimg.com/300/400/animals"
+          alt="random image of animals"
+          loading="lazy"
+        />
+        <img
+          src="https://placeimg.com/300/400/any"
+          data-src="https://placeimg.com/300/400/architecture"
+          alt="random image of architecture"
+          loading="lazy"
+        />
+        <img
+          src="https://placeimg.com/300/400/any"
+          data-src="https://placeimg.com/300/400/nature"
+          alt="random image of nature"
+          loading="lazy"
+        />
+        <img
+          src="https://placeimg.com/300/400/any"
+          data-src="https://placeimg.com/300/400/people"
+          alt="random image of people"
+          loading="lazy"
+        />
+        <img
+          src="https://placeimg.com/300/400/any"
+          data-src="https://placeimg.com/300/400/tech"
+          alt="random image of tech"
+          loading="lazy"
+        />
+        <img
+          src="https://placeimg.com/300/400/any"
+          data-src="https://placeimg.com/300/400/any"
+          alt="random image"
+          loading="lazy"
+        />
+      </article>
+    </main>
+    <footer>
+      <!--Informational block containing information about myself and location.-->
+      <p>&copy; <span id="copyright-year"></span> | Marc Rollins | Arizona</p>
+      <p id="last-modified-date"></p>
+    </footer>
+    <script src="scripts/lazy-loading.js" defer></script>
+    <script src="scripts/retrieve-date.js" defer></script>
+  </body>
+</html>
