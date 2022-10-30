@@ -92,6 +92,10 @@
     opacity: 75%;
     width: 100%;
 }
+.responsive-discover {
+    height: auto;
+    width: 100%;
+}
 .spotlight {
     background-color: var(--primary-color);
     display: grid;
@@ -129,6 +133,25 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     text-justify: center;
+}
+.discover-main {
+    display: flex;
+    flex-direction: column;
+}
+.discover-main section p {
+    max-width: 400px;
+    margin: 10px auto;
+}
+.image-source a:hover {
+    color: var(--accent-color);
+}
+.discover-img {
+    max-width: 400px;
+}
+.discover-img img {
+    height: auto;
+    max-width: 400px;
+    width: 100%;
 }
 /* Element Selectors */
 a {
@@ -175,6 +198,15 @@ section {
     display: inline-block;
     margin: 10px auto;
     width: 95%;
+}
+picture img[data-src] {
+    filter: blur(0.2em);
+    margin: 10px auto;
+}
+picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+  margin: 10px auto;
 }
 /* On click javascript with toggle menu contents*/
 .dropdown li {

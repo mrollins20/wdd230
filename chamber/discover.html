@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chamber Discover Page</title>
+    <meta name="author" content="Marc Rollins" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <div class="logo-banner">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="images/logo.png"
+              alt="Albany County Chamber of Commerce Logo Image"
+            />
+          </a>
+          <div class="banner-title">
+            <h1>Albany County<br />Chamber of Commerce</h1>
+          </div>
+        </div>
+        <nav>
+          <ul class="navigation">
+            <li>
+              <a class="menu-button" href="#" onclick="toggleMenu()">&#9776;</a>
+            </li>
+            <li><a class="nav-link" href="#">Discover</a></li>
+            <li><a class="nav-link" href="#">Directory</a></li>
+            <li><a class="nav-link" href="#">Join</a></li>
+            <li><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+          <div class="socials">
+            <a href="facebook.com"
+              ><img src="images/facebook.png" alt="facebook logo"
+            /></a>
+            <a href="instagram.com"
+              ><img src="images/instagram.png" alt="instagram logo"
+            /></a>
+          </div>
+        </nav>
+        <div class="date">
+          <p class="current-date"></p>
+        </div>
+      </div>
+      <div id="invite-banner" class="invite">
+        <p class="invite">
+          🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+          p.m.
+        </p>
+      </div>
+    </header>
+    <main class="discover-main">
+      <section>
+        <picture class="discover-img">
+          <source
+            srcset="images/downtown-laramie-snowy-medium.jpg"
+            media="(min-width: 700px) and (max-width: 1349px)"
+          />
+          <source
+            srcset="images/downtown-laramie-snowy-medium.jpg"
+            media="(min-width: 1350px)"
+          />
+          <img
+            src="images/downtown-laramie-snowy-small.jpg"
+            data-src="images/downtown-laramie-snowy-small.jpg"
+            alt="Downtown Laramie Wyoming in the Snow"
+            loading="lazy"
+          />
+        </picture>
+        <p
+          class="image-source">
+          <a href="https://www.flickr.com/photos/auvet/38177067541"
+          >Picture by Jimmy Emerson, DVM</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode">CC2.0 License</a>sizing changes were made</p
+        >
+        <h3>Downtown Laramie</h3>
+        <p>
+          Downtown offers a lot of bar-style restaurants where you can go order
+          lots of good food and celebrate with friends. There are also plenty of
+          antique and specialty stores offering a variety of services!
+        </p>
+      </section>
+      <section>
+        <picture class="discover-img">
+          <source
+            srcset="images/university-of-wyoming-medium.jpg"
+            media="(min-width: 700px) and (max-width: 1349px)"
+          />
+          <source
+            srcset="images/university-of-wyoming-medium.jpg"
+            media="(min-width: 1350px)"
+          />
+          <img
+            src="images/university-of-wyoming-small.jpg"
+            data-src="images/university-of-wyoming-small.jpg"
+            alt="University of Wyoming"
+            loading="lazy"
+          />
+        </picture>
+        <p
+          class="image-source">
+          <a href="https://www.flickr.com/photos/auvet/854158873"
+          >Picture by Jimmy Emerson, DVM</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode">CC2.0 License</a>sizing changes were made</p
+        >
+        <h3>University of Wyoming</h3>
+        <p>
+          The focus-point of the town of Laramie is definitely the University of
+          Wyoming. It boasts a multitude of facilities open to both the public
+          and its students. Its dorm buildings are also the tallest buildings in
+          the state of Wyoming!
+        </p>
+      </section>
+      <section>
+        <picture class="discover-img">
+          <source
+            srcset="images/uw-american-heritage-center-medium.jpg"
+            media="(min-width: 700px) and (max-width: 1349px)"
+          />
+          <source
+            srcset="images/uw-american-heritage-center-medium.jpg"
+            media="(min-width: 1350px)"
+          />
+          <img
+            src="images/uw-american-heritage-center-small.jpg"
+            data-src="images/uw-american-heritage-center-small.jpg"
+            alt="American Heritage Center on University of Wyoming Campus"
+            loading="lazy"
+          />
+        </picture>
+        <h3>American Heritage Center</h3>
+        <p>
+          The University of Wyoming has many facilities that serve to preserve
+          and teach the community; One of these facilities, the American
+          Heritage Center, serves to document and observe the findings of Native
+          Americans and much more.
+        </p>
+      </section>
+      <section>
+        <picture class="discover-img">
+          <source
+            srcset="images/rodeo-medium.jpg"
+            media="(min-width: 700px) and (max-width: 1349px)"
+          />
+          <source
+            srcset="images/rodeo-medium.jpg"
+            media="(min-width: 1350px)"
+          />
+          <img
+            src="images/rodeo-small.jpg"
+            data-src="images/rodeo-small.jpg"
+            alt="Cowboy on a Bucking Bronco at Laramie Rodeo"
+            loading="lazy"
+          />
+        </picture>
+        <h3>County Fairs/Rodeos</h3>
+        <p>
+          Many times a year, the city of Laramie will host fairs and events that
+          everyone can participate in. Some of the most popular ones are the
+          Rodeos, but the fair is a close contender; Located along the entirety
+          of 1st and 2nd St!
+        </p>
+      </section>
+      <section class="discover-sec5">
+        <picture class="discover-img">
+          <source
+            srcset="images/vedauwoo-medium.jpg"
+            media="(min-width: 700px) and (max-width: 1349px)"
+          />
+          <source
+            srcset="images/vedauwoo-medium.jpg"
+            media="(min-width: 1350px)"
+          />
+          <img
+            src="images/vedauwoo-small.jpg"
+            data-src="images/vedauwoo-small.jpg"
+            alt="Vedauwoo Wyoming"
+            loading="lazy"
+          />
+        </picture>
+        <a
+          class="image-source"
+          href="https://commons.wikimedia.org/wiki/File:Vedauwoo_2017_3.jpg"
+          >Picture by Fredlyfish4 | sizing changes were made</a
+        >
+        <p
+          class="image-source">
+          <a href="https://commons.wikimedia.org/wiki/File:Vedauwoo_2017_3.jpg"
+          >Picture by Fredlyfish4</a><a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC4.0 License</a>sizing changes were made</p
+        >
+        <h3>Explore the Wilderness</h3>
+        <p>
+          Just outside of the city there are a bunch of fun activities to
+          partake in; No matter if you are with a group or a lone-survivor,
+          there are activities for you! The most common activities that locals
+          participate in are hiking, camping, fishing, and 4-wheeling. We
+          encourage everyone to tryout something.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <!--Informational block containing information about the chamber name, my name, project name, and time modified/location.-->
+      <a class="logo-img" href="index.html">
+        <img
+          class="logo"
+          src="images/logo.png"
+          alt="Albany County Chamber of Commerce Logo Image"
+        />
+      </a>
+      <div class="address-info">
+        <p class="bold-text">Albany Chamber of Commerce</p>
+        <p>310 S 8th St<br />Laramie, WY 82070</p>
+      </div>
+      <div class="contact-info">
+        <p>info@albanycc.org</p>
+        <p>1+(307) 555-3281</p>
+        <p><a href="#">&map;Location Map</a></p>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="copyright-info">
+        <p>&copy;<span id="copyright-year"></span> Albany Chamber</p>
+        <p>Marc Rollins</p>
+        <p><a href="../index.html">WDD 230 Project</a></p>
+        <p id="last-modified-date"></p>
+      </div>
+    </footer>
+    <script src="scripts/retrieve-date.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/lazy-loading.js"></script>
+  </body>
+</html>
