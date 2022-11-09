@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chamber Home Page</title>
+    <meta name="author" content="Marc Rollins" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <div class="logo-banner">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="images/logo.png"
+              alt="Albany County Chamber of Commerce Logo Image"
+            />
+          </a>
+          <div class="banner-title">
+            <h1>Albany County<br />Chamber of Commerce</h1>
+          </div>
+        </div>
+        <nav>
+          <ul class="navigation">
+            <li><a class="menu-button" href="#" onclick="toggleMenu()">&#9776;</a></li>
+            <li><a class="nav-link" href="discover.html">Discover</a></li>
+            <li><a class="nav-link" href="#">Directory</a></li>
+            <li><a class="nav-link" href="#">Join</a></li>
+            <li><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+          <div class="socials">
+            <a href="facebook.com"
+              ><img src="images/facebook.png" alt="facebook logo"
+            /></a>
+            <a href="instagram.com"
+              ><img src="images/instagram.png" alt="instagram logo"
+            /></a>
+          </div>
+        </nav>
+        <div class="date">
+          <p class="current-date"></p>
+        </div>
+      </div>
+      <div id="invite-banner">
+        <p class="invite">
+          🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </p>
+      </div>
+    </header>
+    <main class="simple-main">
+      <form method="get" action="thankyou.html">
+        <h1>Chamber Membership Application</h1>
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <label class="top">First Name*<input type="text" name="fname" required></label>
+          <label class="top">Last Name*<input type="text" name="lname" required></label>
+          <label class="top">Business Position<input type="text" name="bposition"></label>
+          <label class="top">Email Address*<input type="email" name="email" placeholder="someone@mail.com" required></label>
+          <label class="top">Phone Number*<input type="tel" name="phone" placeholder="1235551234" required></label>
+          <label class="top">Business Name*<input type="text" name="bname" required></label>
+        </fieldset>
+        <fieldset>
+          <legend>Membership Information</legend>
+          <label class="top">Membership type*
+            <select name="membership" required>
+              <option value="">Please Select a Membership Type<div class="drop-arrow"> &#9662;</div></option>
+              <option value="npmembership">NP Membership</option>
+              <option value="bmembership">Bronze Membership</option>
+              <option value="smembership">Silver Memebership</option>
+              <option value="gmembership">Gold Membership</option>
+            </select>
+          </label>
+          <label class="top">Business Description<input type="text" name="bdesc"></label>
+          <label class="top"><input type="datetime-local" hidden></label>
+        </fieldset>
+        <input type="submit" value="Create My Membership" class="submit-button">
+      </form>
+    </main>
+    <footer>
+      <!--Informational block containing information about the chamber name, my name, project name, and time modified/location.-->
+      <a class="logo-img" href="#">
+        <img
+          class="logo"
+          src="images/logo.png"
+          alt="Albany County Chamber of Commerce Logo Image"
+        />
+      </a>
+      <div class="address-info">
+        <p class="bold-text">Albany Chamber of Commerce</p>
+        <p>310 S 8th St<br />Laramie, WY 82070</p>
+      </div>
+      <div class="contact-info">
+        <p>info@albanycc.org</p>
+        <p>1+(307) 555-3281</p>
+        <p><a href="#">&map;Albany County Map</a></p>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="copyright-info">
+        <p>&copy;<span id="copyright-year"></span> Albany Chamber</p>
+        <p>Marc Rollins</p>
+        <p><a href="../index.html">WDD 230 Project</a></p>
+        <p id="last-modified-date"></p>
+      </div>
+    </footer>
+    <script src="scripts/retrieve-date.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+  </body>
+</html>
