@@ -127,4 +127,7 @@
         flex-direction: row;
         margin: auto;
     }
+    .membership-stats {
+        display: block;
+    }
 }

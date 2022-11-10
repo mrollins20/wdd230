@@ -296,3 +296,13 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: var(--accent-color) solid 6px;
 }
+.membership-stats {
+    display: none;
+    margin: 10px auto;
+    max-width: 504px;
+    padding: 1rem 2rem;
+}
+.member-head {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+}

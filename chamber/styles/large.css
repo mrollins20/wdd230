@@ -93,6 +93,15 @@
         margin: 10px 15px;
         width: auto;
     }
+    form {
+        grid-column: 1/3;
+    }
+    .membership-stats {
+        grid-column: 3/4;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
     /*
     Alternative section 5 layout on discover page
     .discover-sec5 {

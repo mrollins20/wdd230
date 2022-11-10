@@ -31,7 +31,9 @@
         </div>
         <nav>
           <ul class="navigation">
-            <li><a class="menu-button" href="#" onclick="toggleMenu()">&#9776;</a></li>
+            <li>
+              <a class="menu-button" href="#" onclick="toggleMenu()">&#9776;</a>
+            </li>
             <li><a class="nav-link" href="discover.html">Discover</a></li>
             <li><a class="nav-link" href="#">Directory</a></li>
             <li><a class="nav-link" href="#">Join</a></li>
@@ -52,7 +54,8 @@
       </div>
       <div id="invite-banner">
         <p class="invite">
-          🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+          🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+          p.m.
         </p>
       </div>
     </header>
@@ -61,29 +64,90 @@
         <h1>Chamber Membership Application</h1>
         <fieldset>
           <legend>Applicant Information</legend>
-          <label class="top">First Name*<input type="text" name="fname" required></label>
-          <label class="top">Last Name*<input type="text" name="lname" required></label>
-          <label class="top">Business Position<input type="text" name="bposition"></label>
-          <label class="top">Email Address*<input type="email" name="email" placeholder="someone@mail.com" required></label>
-          <label class="top">Phone Number*<input type="tel" name="phone" placeholder="1235551234" required></label>
-          <label class="top">Business Name*<input type="text" name="bname" required></label>
+          <label class="top"
+            >First Name*<input type="text" name="fname" required
+          /></label>
+          <label class="top"
+            >Last Name*<input type="text" name="lname" required
+          /></label>
+          <label class="top"
+            >Business Position<input type="text" name="bposition"
+          /></label>
+          <label class="top"
+            >Email Address*<input
+              type="email"
+              name="email"
+              placeholder="someone@mail.com"
+              required
+          /></label>
+          <label class="top"
+            >Phone Number*<input
+              type="tel"
+              name="phone"
+              placeholder="1235551234"
+              required
+          /></label>
+          <label class="top"
+            >Business Name*<input type="text" name="bname" required
+          /></label>
         </fieldset>
         <fieldset>
           <legend>Membership Information</legend>
-          <label class="top">Membership type*
+          <label class="top"
+            >Membership type*
             <select name="membership" required>
-              <option value="">Please Select a Membership Type<div class="drop-arrow"> &#9662;</div></option>
+              <option value="">
+                Please Select a Membership Type &#9662;
+              </option>
               <option value="npmembership">NP Membership</option>
               <option value="bmembership">Bronze Membership</option>
               <option value="smembership">Silver Memebership</option>
               <option value="gmembership">Gold Membership</option>
             </select>
           </label>
-          <label class="top">Business Description<input type="text" name="bdesc"></label>
-          <label class="top"><input type="datetime-local" hidden></label>
+          <label class="top"
+            >Business Description<input type="text" name="bdesc"
+          /></label>
+          <label class="top"><input type="datetime-local" hidden /></label>
         </fieldset>
-        <input type="submit" value="Create My Membership" class="submit-button">
+        <input
+          type="submit"
+          value="Create My Membership"
+          class="submit-button"
+        />
       </form>
+      <section class="membership-stats">
+        <h2 class="member-head">Membership Information</h2>
+        <div>
+          <h2>NP Membership</h2>
+          <p>
+            This membership is for non-profit organizations and there is no fee.
+          </p>
+        </div>
+        <div>
+          <h2>Bronze Membership</h2>
+          <p>
+            This is the lowest priced membership with all the benefits of lower
+            memberships plus ability to advertise on the discovery page.
+          </p>
+        </div>
+        <div>
+          <h2>Silver Membership</h2>
+          <p>
+            This membership includes the benefits of the bronze and non-profit
+            memberships; along with the ability to be seen on the events page
+            and directly communicate with the chamber board.
+          </p>
+        </div>
+        <div>
+          <h2>Gold Membership</h2>
+          <p>
+            Being the highest tier of membership, this bundles all of the
+            benefits that we can offer. Notibly, being able to appear in the
+            spotlights on the main page and contribute more to community projects.
+          </p>
+        </div>
+      </section>
     </main>
     <footer>
       <!--Informational block containing information about the chamber name, my name, project name, and time modified/location.-->
