@@ -306,3 +306,26 @@ form label.top input:required:valid {
     color: var(--accent-color);
     font-size: 2.5rem;
 }
+.clear-img {
+    opacity: 100%;
+    filter: none;
+    height: auto;
+    width: 100%;
+}
+.directory-main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.directory-cards {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1em;
+}
+.directory-cards section {
+    box-shadow: none;
+}
+.directory-cards section:hover {
+    box-shadow: 5px 5px var(--accent-color);
+}
