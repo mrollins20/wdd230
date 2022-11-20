@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+@font-face {
+    /* 
+    This font was designed by a reddit user credited in the file properties as meetthesharpies. 
+    They designed this font for use anywhere and anyone.
+    */
+    font-family: 'Logbook Prime v2';
+    src: url('logbook-prime-v2_0.ttf');
+}
+
+/* Contains all Id Selectors */
+#last-modified-date {
+    color: yellow;
+    font-weight: bold;
+}
+#portrait-box {
+    background-color: lightsteelblue;
+    border-radius: 10px;
+    justify-items: center;
+    margin: auto;
+    padding: 25px;
+    width: 80%;
+}
+#weather-icon {
+    max-width: 100px;
+}
+
+/* Contains all Class Selectors */
+.bold-text {
+    font-size: 2em;
+    line-height: 3em;
+}
+/* Contains all other Selectors */
+body {
+    background-color: white;
+    display: grid;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    justify-items: center;
+    margin: auto;
+    width: 90%;
+}
+footer {
+    background-color: lightsteelblue;
+    border-radius: 10px;
+    color: white;
+    display: grid;
+    font-size: 16px;
+    justify-items: center;
+    margin: auto;
+    padding: 25px;
+    width: 80%;
+}
+h1 {
+    color: white;
+    font-size: 25px;
+    grid-column: 2/3;
+    margin: auto;
+}
+h2 {
+    color: black;
+    font-size: 20px;
+    margin: 0 auto;
+}
+header {
+    margin: auto;
+    width: 100%;
+}
+img {
+    margin: 20px;
+    width: 80%;
+}
+li {
+    margin: 15px 0px 15px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+main {
+    width: 80%;
+    margin-bottom: 50px;
+}
+ul {
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+}
+main,
+section {
+    margin: auto;
+    text-align: center;
+}
+figure {
+    border: black 1px solid;
+}
+p {
+    line-height: 2em;
+    margin: 0 auto;
+}
+
+/* Contains mobile styling Selectors */

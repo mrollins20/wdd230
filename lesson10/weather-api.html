@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/medium.css">
+    <title>WDD 230: Weather API Test Page</title>
+    <meta name="author" content="Marc Rollins" />
+    <meta
+      name="description"
+      content="Weather API Test Page"
+    />
+  </head>
+  <body>
+    <header>
+      <!--A box containing a self portrait and main heading.-->
+      <section id="portrait-box">
+        <h1>WDD 230: Weather API</h1>
+      </section>
+    </header>
+    <main>
+        <h1>OpenWeatherMap.org API Test</h1>
+        <p>The current temperature in Fairbanks, Alaska is <br><span class="bold-text"><span id="current-temp"></span> &deg;F</span></p>
+        <h2>Current Condition Icon</h2>
+        <figure>
+          <img src="" alt="" id="weather-icon" />
+          <figcaption></figcaption>
+        </figure>
+    </main>
+    <footer>
+      <!--Informational block containing information about myself and location.-->
+      <p>&copy; <span id="copyright-year"></span> | Marc Rollins | Arizona</p>
+      <p id="last-modified-date"></p>
+    </footer>
+    <!--Use the getDate script. -->
+    <script src="scripts/retrieve-date.js" defer></script>
+    <script src="scripts/weatherapi.js" defer></script>
+  </body>
+</html>
