@@ -1,26 +1,34 @@
 // windchill.js
 // calculate windchill using wind speed and temperature given.
-
-// Retrieve html elements
-let temperatureElement = document.querySelector(".temperature");
-let windSpeedElement = document.querySelector(".wind-speed");
-let windChillElement = document.querySelector(".wind-chill");
-let feelsTempElement = document.querySelector(".feels-temp");
-
+import {data} from "./weatherapi.js";
+console.log(data)
 // create windchill values
-let temp = temperatureElement.textContent;
-let windSpeed = windSpeedElement.textContent;
-let windChill = calcWindChill(temp, windSpeed);
+const weatherData = await data
+const tempFah = await weatherData.main.temp;
+const windSpeedMph = await weatherData.wind.speed;
+console.log(tempFah);
+console.log(windSpeedMph);
+const tempCel = calcCel(tempFah);
+const windSpeedKph = calcKph(windSpeedMph);
+const windChill = calcWindChill(tempCel, windSpeedKph);
+console.log(windChill);
+let fahWindChill = 0;
+if (windChill != "N/A") {
+    fahWindChill = calcFah(windChill);
+    document.querySelector(".wind-chill").textContent = fahWindChill;
+}
+else {
+    document.querySelector(".wind-chill-p").textContent = "Wind Chill: N/A";
+}
 
 // Place windchill values into document
-windChillElement.textContent = windChill;
-feelsTempElement.textContent = temp - windChill;
+
 
 // windchill function
 function calcWindChill(temp, windSpeed) {
     if (temp <= 10) {
         if (windSpeed > 4.8) {
-            return (35.74 + 0.6215*temp - 35.75*(windSpeed**0.16) + 0.4275*temp*(windSpeed**0.16)).toFixed(1)
+            return (35.74 + (0.6215*temp) - (35.75*(windSpeed**0.16)) + (0.4275*temp*(windSpeed**0.16))).toFixed(1)
         }
         // If the wind speed is less than 4.9k/h, return 'N/A'
         else {
@@ -31,4 +39,20 @@ function calcWindChill(temp, windSpeed) {
     else {
         return "N/A"
     }
+}
+// Fahrenheit function
+function calcFah(temp) {
+    return ((temp*(9/5))+32).toFixed(1)
+}
+// Celsius function
+function calcCel(temp) {
+    return (temp - 32)*(5/9)
+}
+// kph function
+function calcKph(mph) {
+    return mph*1.60934;
+}
+// mph function
+function calcMph(kph) {
+    return kph/1.60934;
 }

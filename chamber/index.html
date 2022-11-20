@@ -74,7 +74,7 @@
           <img
             class="responsive"
             src="images/wdd230-org-small.jpg"
-            data-src="images/wdd230-org-small"
+            data-src="images/wdd230-org-small.jpg"
             alt="a photo of the albany county court house."
             loading="lazy"
           />
@@ -88,14 +88,14 @@
       <section class="weather">
         <h3>Weather</h3>
         <div class="weather-box">
-          <img class="responsive" src="images/weather-img.png" alt="" />
-          <h4><span class="temperature">9</span>&deg;C</h4>
+          <img class="weather-img responsive" src="" alt="current weather visual icon" />
+          <h4><span class="temperature"></span>&deg;F</h4>
         </div>
         <span class="sky-state"></span>
         <div class="divider"></div>
-        <p>Wind Speed: <span class="wind-speed">4.9</span>km/h</p>
-        <p>Wind Chill: <span class="wind-chill"></span>&deg;C</p>
-        <p>Feels Like: <span class="feels-temp"></span>&deg;C</p>
+        <p>Wind Speed: <span class="wind-speed"></span>mph</p>
+        <p class="wind-chill-p">Wind Chill: <span class="wind-chill"></span>&deg;F</p>
+        <p>Feels Like: <span class="feels-temp"></span>&deg;F</p>
       </section>
       <section class="news">
         <h3>News Release</h3>
@@ -157,6 +157,7 @@
       </div>
       <div class="footer-divider"></div>
       <div class="copyright-info">
+        <p>Weather Info Provided by<br>OpenWeatherMap</p>
         <p>&copy;<span id="copyright-year"></span> Albany Chamber</p>
         <p>Marc Rollins</p>
         <p><a href="../index.html">WDD 230 Project</a></p>
@@ -165,7 +166,8 @@
     </footer>
     <script src="scripts/retrieve-date.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
     <script src="scripts/lazy-loading.js"></script>
+    <script type="module" src="scripts/weatherapi.js" defer></script>
+    <script type="module" src="scripts/windchill.js" defer></script>
   </body>
 </html>

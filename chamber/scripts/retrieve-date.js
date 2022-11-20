@@ -32,7 +32,7 @@ let modifiedSeconds = determineSeconds(modificationSeconds);
 document.querySelector(".current-date").textContent = `${weekDay}, ${currentDay} ${currentMonth} ${copyrightYear}`
 document.getElementById("copyright-year").textContent = `${copyrightYear}`;
 
-document.getElementById("last-modified-date").textContent = `Last Modification: ${modificationMonth}/${modificationDay}/${modificationYear} ${modificationHours}:${modifiedSeconds}`;
+document.getElementById("last-modified-date").innerHTML = `Last Modification: <br>${modificationMonth}/${modificationDay}/${modificationYear} ${modificationHours}:${modifiedSeconds}`;
 
 
 // Determine if the number of seconds is less than 10. If so, add a zero before it.
