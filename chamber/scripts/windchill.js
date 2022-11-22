@@ -1,17 +1,17 @@
 // windchill.js
 // calculate windchill using wind speed and temperature given.
 import {data} from "./weatherapi.js";
-console.log(data)
+// console.log(data) // DebugStatement: Ensure data imported successfully
 // create windchill values
 const weatherData = await data
 const tempFah = await weatherData.main.temp;
 const windSpeedMph = await weatherData.wind.speed;
-console.log(tempFah);
-console.log(windSpeedMph);
+//console.log(tempFah); // DebugStatement: Check temperature for fahrenheit value
+//console.log(windSpeedMph); // DebugStatement: Check for miles value
 const tempCel = calcCel(tempFah);
 const windSpeedKph = calcKph(windSpeedMph);
 const windChill = calcWindChill(tempCel, windSpeedKph);
-console.log(windChill);
+// console.log(windChill); // DebugStatement: Check that the windchill calculation is correct
 let fahWindChill = 0;
 if (windChill != "N/A") {
     fahWindChill = calcFah(windChill);
