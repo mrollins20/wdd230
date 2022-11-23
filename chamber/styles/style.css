@@ -13,6 +13,8 @@
 /* Id Selectors */
 #invite-banner {
     background-color: var(--light-neutral-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     color: black;
     font-size: 2em;
     padding: .25em 1em;
@@ -22,6 +24,11 @@
 .contact-info {
     display: flex;
     flex-direction: column;
+}
+.banner {
+    background-color: var(--neutral-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .button {
     background-color: #6bb300;
@@ -33,19 +40,26 @@
 .button:hover {
     background-color: var(--accent-color2);
     color: black;
-    
 }
 .current-date {
     background-color: var(--light-neutral-color);
+    border-radius: 5px;
     color: black;
     display: inline-block;
     font-weight: 600;
     margin: 10px auto;
     width: 75%;
 }
+.date {
+    border-radius: 5px;
+}
+.event {
+    border-radius: 5px;
+}
 .divider,
 .footer-divider {
     background-color: var(--light-neutral-color);
+    border-radius: 0.25em;
     height: .15em;
     margin: auto;
     width: 75%;
@@ -53,10 +67,18 @@
 .footer-divider {
     margin: 1em auto;
 }
+.hero {
+    border-radius: 5px;
+}
+.hero picture img {
+    border: 3px solid var(--accent-color2);
+    border-radius: 5px;
+}
 .invite {
     display: none;
 }
 .join {
+    border-radius: 5px;
     display: none;
 }
 .logo {
@@ -95,6 +117,9 @@
     background-color: var(--light-neutral-color);
     border-radius: 25%;
 }
+.news {
+    border-radius: 5px;
+}
 .responsive {
     height: auto;
     opacity: 75%;
@@ -103,14 +128,6 @@
 .responsive-discover {
     height: auto;
     width: 100%;
-}
-.spotlight {
-    background-color: var(--primary-color);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin: 5px auto;
-    width: 95%;
 }
 .spotlight p,
 .spotlight h3 {
@@ -126,14 +143,28 @@
 .socials a img {
     border-radius: 25%;
 }
+.spotlight {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 5px auto;
+    width: 95%;
+}
 .spotlights {
     background-color: var(--accent-color);
+    border-radius: 5px;
+    margin: 10px auto;
 }
 .spotlights div:last-child {
     display: none;
 }
 .toggle-invite {
     display: block;
+}
+.weather {
+    border-radius: 5px;
 }
 .weather-box {
     display: grid;
@@ -145,6 +176,9 @@
 .discover-main {
     display: flex;
     flex-direction: column;
+}
+.discover-main section {
+    border-radius: 5px;
 }
 .discover-main section p {
     max-width: 400px;
@@ -178,15 +212,20 @@ body h3 {
 }
 footer {
     background-color: var(--neutral-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 footer a:hover {
     color: var(--accent-color);
 }
 header {
-    background-color: var(--neutral-color);
+    background-color: var(--light-neutral-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 main {
     background-color: var(--accent-color2);
+    border-radius: 5px;
     margin: 10px auto;
     width: 95%;
 }
@@ -243,6 +282,8 @@ form legend {
 }
 form {
     background-color: var(--primary-color);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     margin: auto;
     padding: 1rem 2rem;
 }
@@ -308,6 +349,8 @@ form label.top input:required:valid {
     border-left: var(--accent-color) solid 6px;
 }
 .membership-stats {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: none;
     margin: 10px auto;
     max-width: 504px;
@@ -323,6 +366,8 @@ form label.top input:required:valid {
     height: auto;
     width: 100%;
 }
+
+/* Directory Page Styling */
 .directory-main {
     display: grid;
     grid-template-columns: auto;
@@ -334,8 +379,10 @@ form label.top input:required:valid {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1em;
 }
-.directory-cards section {
+.directory-cards section,
+.directory-cards section img {
     box-shadow: none;
+    border-radius: 5px;
 }
 .directory-cards section:hover {
     box-shadow: 5px 5px var(--accent-color);
