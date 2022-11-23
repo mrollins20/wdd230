@@ -27,11 +27,13 @@
         width: 100%;
     }
     .spotlights div:last-child {
-        display: block;
+        display: grid;
     }
     .spotlight {
-        margin: auto;
-        padding: 3.5em 0;
+        flex: auto;
+        max-height: 280px;
+        margin: 10px auto;
+        padding: 1em 0;
     }
     .join {
         display: block;
@@ -60,10 +62,11 @@
         align-items: center;
         display: flex;
         flex-direction: row;
+        flex: auto;
     }
     nav {
         grid-column: 3/4;
-        max-width: 1000px;
+        max-width: 1100px;
     }
     .socials {
         grid-column: 4/5;

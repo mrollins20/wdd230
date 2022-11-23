@@ -98,9 +98,11 @@ function determineMonth(monthOfYear) {
 switch (weekDayNumber) {
     case 1:
         document.getElementsByClassName("invite")[0].classList.toggle("toggle-invite")//.toggle("invite")
+        document.getElementById("invite-banner").style.backgroundColor = "#C8C8C8"
         break;
     case 2:
         document.getElementsByClassName("invite")[0].classList.toggle("toggle-invite")//.toggle("invite")
+        document.getElementById("invite-banner").style.backgroundColor = "#C8C8C8"
         break;
     default:
         break;

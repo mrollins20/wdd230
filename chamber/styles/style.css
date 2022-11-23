@@ -12,7 +12,7 @@
 }
 /* Id Selectors */
 #invite-banner {
-    background-color: var(--light-neutral-color);
+    background-color: white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: black;
@@ -25,6 +25,12 @@
     display: flex;
     flex-direction: column;
 }
+.contact-info a,
+.contact-info p,
+.bold-text {
+    flex: auto;
+    max-height: 30px;
+}
 .banner {
     background-color: var(--neutral-color);
     border-bottom-left-radius: 5px;
@@ -32,14 +38,19 @@
 }
 .button {
     background-color: #6bb300;
+    border-radius: 5px;
     margin: 1em auto;
     max-width: 40%;
     padding: 0.5em;
+    transition: all 0.4s ease-in-out 0s;
     width: 100%;
 }
 .button:hover {
     background-color: var(--accent-color2);
+    border-bottom: 1px solid var(--accent-color);
+    box-shadow: 2px 2px var(--accent-color);
     color: black;
+    transition: all 0.4s ease-in-out 0s;
 }
 .current-date {
     background-color: var(--light-neutral-color);
@@ -75,6 +86,7 @@
     border-radius: 5px;
 }
 .invite {
+    background-color: white;
     display: none;
 }
 .join {
@@ -87,6 +99,17 @@
     display: inline-block;
     margin: 10px auto;
     max-width: 100px;
+    transition: all 0.4s ease-in-out 0s;
+}
+.logo:hover {
+    background-color: rgba(176, 198, 206, .8);
+    box-shadow: -2px -2px 3px white, -2px 2px 3px white, 2px -2px 3px white, 2px 2px 3px white;
+    transition: all 0.4s ease-in-out 0s;
+}
+.logo-img,
+.header-logo,
+nav a {
+    border-bottom: none;
 }
 .menu-button {
     font-size: 3em;
@@ -101,21 +124,22 @@
 }
 .navigation li {
     display: none;
+    flex: auto;
 }
 .nav-link {
+    border-radius: 5px;
     display: block;
     padding: 0.75rem;
     text-align: center;
     text-decoration: none;
     color: white;
     font-weight: 700;
-    transition: 0.5s;
-    font-size: clamp(1rem, 2vmin, 1.5rem);
+    transition: all 0.4s ease-in-out 0s;
 }
 .navigation a:hover {
     color: black;
     background-color: var(--light-neutral-color);
-    border-radius: 25%;
+    box-shadow: 0px 3px 3px white;
 }
 .news {
     border-radius: 5px;
@@ -142,6 +166,10 @@
 }
 .socials a img {
     border-radius: 25%;
+    transition: all 0.4s ease-in-out 0s;
+}
+.socials a img:hover {
+    box-shadow: 0px 3px 3px var(--light-neutral-color);
 }
 .spotlight {
     background-color: var(--primary-color);
@@ -161,6 +189,7 @@
     display: none;
 }
 .toggle-invite {
+    background-color: var(--light-neutral-color);
     display: block;
 }
 .weather {
@@ -191,12 +220,21 @@
     max-width: 400px;
 }
 .discover-img img {
+    border-top: 2px solid var(--accent-color2);
+    border-bottom: 3px solid var(--accent-color2);
+    border-radius: 5px;
     height: auto;
     max-width: 400px;
     width: 100%;
 }
+.discover-img img:hover {
+    transition: all 0.4s ease-in-out 0s;
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+}
 /* Element Selectors */
 a {
+    border-bottom: 1px solid var(--light-neutral-color);
     color: white;
     display: block;
     text-decoration: none;
@@ -209,6 +247,7 @@ body h1,
 body h2,
 body h3 {
     font-family: 'Copse';
+    letter-spacing: .05em;
 }
 footer {
     background-color: var(--neutral-color);
@@ -242,6 +281,10 @@ nav a {
     margin: auto;
     padding: 0;
     width: auto;
+}
+p {
+    max-width: 90%;
+    margin: 5px auto;
 }
 section {
     background-color: var(--primary-color);
@@ -383,6 +426,7 @@ form label.top input:required:valid {
 .directory-cards section img {
     box-shadow: none;
     border-radius: 5px;
+    transition: all 0.4s ease-in-out 0s;
 }
 .directory-cards section:hover {
     box-shadow: 5px 5px var(--accent-color);
