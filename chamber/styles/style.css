@@ -18,6 +18,11 @@
     padding: .25em 1em;
 }
 /* Class Selectors */
+.address-info,
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
 .button {
     background-color: #6bb300;
     margin: 1em auto;
@@ -41,9 +46,12 @@
 .divider,
 .footer-divider {
     background-color: var(--light-neutral-color);
-    height: .1em;
+    height: .15em;
     margin: auto;
     width: 75%;
+}
+.footer-divider {
+    margin: 1em auto;
 }
 .invite {
     display: none;
