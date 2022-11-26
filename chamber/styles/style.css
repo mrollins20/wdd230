@@ -384,6 +384,10 @@ form input.submit-button {
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
+    transition: all 0.3s ease-in-out 0s;
+}
+form input.submit-button:hover {
+    box-shadow: 5px 5px var(--accent-color);
 }
 form label.top input::placeholder,
 form label.top input {
@@ -443,7 +447,7 @@ form label.top input:required:valid {
     background-color: var(--primary-color);
     grid-column: auto;
     margin: 10px auto;
-    padding: 0;
+    padding: 1em 0;
     width: 95%;
 }
 .contact-form h1 {
@@ -453,6 +457,18 @@ form label.top input:required:valid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+}
+.feedback-msg {
+    background-color: var(--accent-color2);
+    border-radius: 5px;
+    color: black;
+    display: none;
+    font-size: large;
+    margin: 10px auto;
+    max-width: 500px;
+}
+.feedback-msg-confirmation {
+    display: block;
 }
 .form-divider {
     background-color: var(--accent-color);

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chamber Home Page</title>
     <meta name="author" content="Marc Rollins" />
-    <meta name="description" content="Albany County Chamber of Commerce" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -32,13 +31,11 @@
         </div>
         <nav>
           <ul class="navigation">
-            <li>
-              <a class="menu-button" href="#" onclick="toggleMenu()">&#9776;</a>
-            </li>
+            <li><a class="menu-button" href="#" onclick="toggleMenu()">&#9776;</a></li>
             <li><a class="nav-link" href="discover.html">Discover</a></li>
             <li><a class="nav-link" href="directory.html">Directory</a></li>
             <li><a class="nav-link" href="join.html">Join</a></li>
-            <li><a class="nav-link" href="#">Contact</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
           <div class="socials">
             <a href="facebook.com"
@@ -56,43 +53,11 @@
           <p class="current-date"></p>
         </div>
       </div>
-      <div id="invite-banner">
-        <p class="invite">
-          🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
-          p.m.
-        </p>
-      </div>
     </header>
-    <main class="contact-main">
-      <section class="member-cards"></section>
-      <section class="contact-box">
-        <form class="contact-form" action="feedbackthankyou.html">
-          <h1>We would love to hear your thoughts!</h1>
-          <fieldset>
-            <legend>Contact Information</legend>
-            <label class="top"
-              >First Name*<input type="text" name="fname" required
-            /></label>
-            <label class="top"
-              >Last Name*<input type="text" name="lname" required
-            /></label>
-            <label class="top"
-              >Email Address*<input
-                type="email"
-                name="email"
-                placeholder="someone@mail.com"
-                required
-            /></label>
-            <div class="form-divider"></div>
-            <label class="top"
-              >What would you like to tell us?*<textarea name="feedback" id="contact-text" cols="30" rows="10" required></textarea>
-          </fieldset>
-          <input
-            type="submit"
-            value="Send Feedback"
-            class="submit-button"
-          />
-        </form>
+    <main class="simple-main">
+      <section class="thanks-section">
+        <h1 class="thanks-msg">Thank you for your feedback!</h1>
+        <p>You're information has been received.</p>
       </section>
     </main>
     <footer>
@@ -116,12 +81,12 @@
       <div class="contact-info">
         <p>info@albanycc.org</p>
         <p>1+(307) 555-3281</p>
-        <!--<p>
+        <p>
           <a
             href="https://www.google.com/maps/place/Albany+County,+WY/@41.6821654,-106.4128495,9z/data=!4m10!1m2!2m1!1salbany+county!3m6!1s0x8767c441a8ebea2f:0x72e73146469c2588!8m2!3d41.638448!4d-105.5943388!15sCg1hbGJhbnkgY291bnR5kgEJdXNfY291bnR54AEA!16zL20vMG1rYnI"
             >&map;Albany County Map</a
           >
-        </p>-->
+        </p>
       </div>
       <div class="footer-divider"></div>
       <div class="copyright-info">
@@ -138,9 +103,5 @@
     </footer>
     <script src="scripts/retrieve-date.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/lazy-loading.js"></script>
-    <script src="json/people.json"></script>
-    <script src="scripts/contact.js" type="module"></script>
-    <script src="scripts/feedback.js"></script>
   </body>
 </html>
