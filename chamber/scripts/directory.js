@@ -1,6 +1,6 @@
 import businesses from "../json/data.json" assert {type: "json"};
 
-console.log(businesses);
+//console.log(businesses);
 const cards = document.body.querySelector(".directory-cards");
 
 for (let index = 0; index < businesses.length; index++) {

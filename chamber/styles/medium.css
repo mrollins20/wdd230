@@ -136,4 +136,8 @@
     .membership-stats {
         display: block;
     }
+    .simple-main form,
+    .simple-main section.membership-stats{
+        max-width: 800px;
+    }
 }
