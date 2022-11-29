@@ -4,6 +4,7 @@
         "address": "100 N Grand, Laramie WY",
         "phone": "1+(000) 555-8376",
         "website": "dailynew.com",
+        "email": "share@dailynews.com",
         "image": "https://via.placeholder.com/150",
         "membership": "Gold",
         "message": "We have an interest and you have the story!"
@@ -13,6 +14,7 @@
         "address": "700 N Grand, Laramie WY",
         "phone": "1+(000) 555-4379",
         "website": "rmpreserve.com",
+        "email": "contact@rmpreserve.com",
         "image": "https://via.placeholder.com/150",
         "membership": "Non-profit",
         "message": "Give back to nature"
@@ -22,6 +24,7 @@
         "address": "110 N Grand, Laramie WY",
         "phone": "1+(000) 555-2854",
         "website": "acbanking.com",
+        "email": "contact@acbanking.com",
         "image": "https://via.placeholder.com/150",
         "membership": "Gold",
         "message": "Choose your number 1 choice for secure banking"
@@ -31,53 +34,59 @@
         "address": "110 N Grand, Laramie WY",
         "phone": "1+(000) 555-9834",
         "website": "grandavenuepizza.com",
+        "email": "contact@grandsliceofpie.com",
         "image": "https://via.placeholder.com/150",
         "membership": "Bronze",
-        "message": ""
+        "message": "Grandest pizza around!"
     },
     {
         "name": "The Crow Bar",
         "address": "110 N Grand, Laramie WY",
         "phone": "1+(000) 555-2057",
         "website": "laramiecrowbar.com",
+        "email": "management@cbbar.com",
         "image": "https://via.placeholder.com/150",
         "membership": "Silver",
-        "message": ""
+        "message": "Kick back and enjoy a nice sports setting."
     },
     {
         "name": "University of Wyoming",
         "address": "110 N Grand, Laramie WY",
         "phone": "1+(000) 555-6070",
         "website": "uniwyo.edu",
+        "email": "studentsupport@uniwyo.edu",
         "image": "https://via.placeholder.com/150",
         "membership": "Gold",
-        "message": ""
+        "message": "Become a cowboy and take your education a step further!"
     },
     {
         "name": "Bell Leasing",
         "address": "500 2nd St, Laramie WY",
         "phone": "1+(000) 555-2364",
         "website": "belleasing.com",
+        "email": "bell@leasing.com",
         "image": "https://via.placeholder.com/150",
         "membership": "Bronze",
-        "message": ""
+        "message": "All your renting needs."
     },
     {
         "name": "Glacier Ice",
         "address": "502 2nd St, Laramie WY",
         "phone": "1+(000) 555-1687",
         "website": "glacierice.com",
+        "email": "lowcostfrost@glacierice.com",
         "image": "https://via.placeholder.com/150",
         "membership": "Bronze",
-        "message": ""
+        "message": "The frost with a low cost."
     },
     {
         "name": "Toppers",
         "address": "110 N Grand, Laramie WY",
         "phone": "1+(000) 555-6328",
         "website": "toppers.com",
+        "email": "support@toppers.com",
         "image": "https://via.placeholder.com/150",
         "membership": "Bronze",
-        "message": ""
+        "message": "The pizza at the top."
     }
 ]
