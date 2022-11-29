@@ -489,7 +489,11 @@ form label.top input:required:valid {
     border: 2px solid var(--accent-color2);
     box-shadow: none;
     border-radius: 5px;
+    max-width: 475px;
     transition: all 0.3s ease-in-out 0s;
+}
+.member-cards section:last-child {
+    grid-column: 1/3;
 }
 .member-cards section:hover {
     box-shadow: 5px 5px var(--accent-color);
