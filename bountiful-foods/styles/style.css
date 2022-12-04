@@ -1,0 +1,64 @@
+@font-face {
+    /* 
+    This font was designed by a reddit user credited in the file properties as meetthesharpies. 
+    They designed this font for use anywhere and anyone.
+    */
+    font-family: 'Logbook Prime v2';
+    src: url('logbook-prime-v2_0.ttf');
+}
+:root {
+    /* https://coolors.co/1e1e1e-711e00-c9a025-c8c8c8 */
+    --neutral-color: #c8c8c8;
+    --primary-color: #507D2A;
+    --accent-color: #711E00;
+    --accent-color2: #c9a025;
+}
+
+/* ----------index.html Styles---------- */
+
+/* ----------aboutus.html Styles---------- */
+
+/* ----------fresh.html Styles---------- */
+
+/* ----------Id Styles---------- */
+
+/* ----------General Styles---------- */
+a {
+    color: var(--neutral-color);
+}
+body {
+    font-family: "Logbook Prime v2";
+    margin: 0em auto;
+    max-width: 650px;
+    text-align: center;
+}
+header{
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    margin: 0em auto;
+    max-width: 650px;
+    position: static;
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    margin: 0em auto;
+    max-width: 650px;
+}
+img {
+    margin: auto;
+}
+li {
+    list-style: none;
+}
+main {
+    margin: 0em auto;
+    max-width: 600px;
+}
+section {
+    background-color: var(--accent-color);
+    color: var(--neutral-color);
+}
+ul {
+    padding-inline-start: 0px;
+}

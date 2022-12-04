@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marc Rollins" />
+    <meta
+      name="Description"
+      content="Bountiful Foods Home Page | We specialize in locally grown foods from your farmers to your doorstep!"
+    />
+    <title>Bountiful Foods Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style-med.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bountiful foods</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fresh.html">Build Your Own Drink</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-box">
+        <picture id="hero-img" class="responsive-img">
+            <source
+              srcset="https://via.placeholder.com/150"
+              media="(min-width: 580px) and (max-width: 939px)"
+            />
+            <source
+              srcset="https://via.placeholder.com/150"
+              media="(min-width: 940px)"
+            />
+            <img
+              class="responsive"
+              src="https://via.placeholder.com/150"
+              data-src="https://via.placeholder.com/150"
+              alt=""
+              loading="lazy"
+            />
+          </picture>
+      </section>
+      <section class="home-info">
+        <p>Home Info</p>
+      </section>
+      <section class="create">
+        <p>Create a drink</p>
+      </section>
+      <section class="forecast">
+        <p>Carlsbad Forecast</p>
+      </section>
+    </main>
+    <footer>
+      <!--Informational block containing information about the chamber name, my name, project name, and time modified/location.-->
+      <a class="logo-img" href="#">
+        <img
+          class="logo"
+          src="images/logo.jpg"
+          alt="Albany County Chamber of Commerce Logo Image"
+        />
+      </a>
+      <div class="address-info">
+        <p>Carlsbad, CA</p>
+      </div>
+      <div class="contact-info">
+        <p><a href="resources.html">Resources and Citations</a></p>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="copyright-info">
+        <p>
+          &copy;<span id="copyright-year"></span> Bountiful Foods | Marc Rollins
+          | <a href="../index.html">WDD 230 Project</a>
+        </p>
+        <p id="last-modified-date"></p>
+      </div>
+    </footer>
+    <script src="scripts/date-time.js" defer></script>
+  </body>
+</html>
