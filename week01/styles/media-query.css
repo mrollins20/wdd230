@@ -1,0 +1,26 @@
+/* Id Selectors */
+
+/* Class Selectors */
+
+/* Element Selectors */
+body {
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+}
+main {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+section {
+    background-color: white;
+    padding: 1rem;
+}
+/* MultiElement Selectors */
+footer,
+header,
+main {
+    background-color: lightsteelblue;
+    margin: 1rem auto;
+    max-width: 640px;
+    padding: 1rem;
+}

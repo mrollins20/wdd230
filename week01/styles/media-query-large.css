@@ -1,0 +1,18 @@
+@media screen and (min-width: 500px) {
+/* Id Selectors */
+
+/* Class Selectors */
+
+/* Element Selectors */
+h1 {
+    color: white;
+}
+header {
+    background-color: black;
+}
+main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+/* MultiElement Selectors */
+};

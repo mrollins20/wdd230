@@ -1,0 +1,50 @@
+/* Id Selectors */
+#last-modified-date {
+    font-weight: normal;
+}
+/* Class Selectors */
+
+/* Element Selectors */
+a {
+    color: black;
+    text-decoration: none;
+}
+body {
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+div {
+    background-color: whitesmoke;
+    border: 2px solid black;
+    margin: auto;
+    max-width: 500px;
+}
+li {
+    background: lightgray;
+    margin: 10px;
+    padding: .5rem;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* MultiElement Selectors */
+header,
+main,
+footer {
+    margin: 1rem;
+}
+
+/* Action Selectors */
+a:hover {
+    color: dodgerblue;
+}
+li:hover {
+    color: dodgerblue;
+    padding: 1rem;
+}
