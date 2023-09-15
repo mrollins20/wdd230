@@ -22,7 +22,7 @@ let modifiedSeconds = determineSeconds(modificationSeconds);
 //Return the copyright year and Modification date.
 document.getElementById("copyright-year").textContent = `${copyrightYear}`;
 
-document.getElementById("last-modified-date").textContent = `Last Updated: ${modificationMonth}/${modificationDay}/${modificationYear} ${modificationHours}:${modifiedSeconds}`;
+document.getElementById("lastModified").textContent = `Last Updated: ${modificationMonth}/${modificationDay}/${modificationYear} ${modificationHours}:${modifiedSeconds}`;
 
 
 // Determine if the number of seconds is less than 10. If so, add a zero before it.

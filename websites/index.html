@@ -6,26 +6,60 @@
     <meta name="description" content="Marc Rollins | WDD 230 - Web Frontend Development | course assignment portal">
     <meta name="author" content="Marc Rollins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <title>Marc Rollins - WDD 230 - Web Frontend Development</title>
 </head>
 <body>
     <header>
-        <h1>WDD230 Course Homepage</h1>
-        <nav></nav>
+        <img src="images/self-portrait.jpg" alt="Self Portrait">
+        <h1>Marc K. Rollins</h1>
     </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="">Chamber</a>
+        <a href="">Site Plan</a>
+        <a href="">Form</a>
+    </nav>
     <main>
-        <ul id="assignment-list">
-            <div><p>Week 01</p>
-                <li><a href="/week01/holygrail.html">Holy Grail Activity</a></li>
-                <li><a href="https://codepen.io/mrollins20/pen/yLGXjLm">Applied Javascript Activity</a></li>
-                <li><a href="/week01/media-query.html">Media Query Activity</a></li>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <div class="divider"></div>
+        <section class="card">
+            <h3 class="card-header">Learning Activities</h3>
+            <div class="card-body">
+                <ul class="week-links">
+                    <p>Week 01: </p>
+                    <li><a href="/week01/holygrail.html">Holy Grail Activity</a></li>
+                    <li><a href="https://codepen.io/mrollins20/pen/yLGXjLm">Applied Javascript Activity</a></li>
+                    <li><a href="/week01/media-query.html">Media Query Activity</a></li>
+                </ul>
+                <ul class="week-links">
+                    <p>Week 02:</p>
+                </ul>
+                <ul class="week-links">
+                    <p>Week 03:</p>
+                </ul>
+                <ul class="week-links">
+                    <p>Week 04:</p>
+                </ul>
+                <ul class="week-links">
+                    <p>Week 05:</p>
+                </ul>
+                <ul class="week-links">
+                    <p>Week 06:</p>
+                </ul>
             </div>
-        </ul>
+        </section>
+        <section class="card">
+            <h3 class="card-header">Information</h3>
+            <div class="card-body">
+                <p>Placeholder</p>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; <span id="copyright-year"></span> | Marc Rollins | Arizona</p>
-        <p id="last-modified-date"></p>
+        <p id="lastModified"></p>
     </footer>
     <script src="scripts/get-dates.js" defer></script>
 </body>
