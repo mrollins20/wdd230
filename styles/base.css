@@ -1,0 +1,74 @@
+/* Id Selectors */
+
+/* Class Selectors */
+.card {
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 100%;
+}
+.card-body {
+    background-color: white;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+.divider {
+    display: none;
+}
+.week-links {
+    margin: auto 1rem;
+
+}
+/* Element Selectors */
+a {
+    margin: auto;
+}
+body {
+    text-align: center;
+}
+footer {
+    margin: 1rem auto;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+    margin: auto;
+}
+main {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem auto;
+    max-width: 85%;
+}
+nav {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
+}
+ul {
+    padding: 0;
+}
+/* MultiElement Selectors */
+footer,
+header {
+    background-color: lightgrey;
+    max-width: 1500px;
+    width: 100%;
+}
+header img{
+    margin: 1rem auto;
+    margin-right: 1rem;
+    max-height: 100px;
+}
+header h1 {
+    margin: auto;
+    margin-left: 1rem;
+    text-align: left;
+}
