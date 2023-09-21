@@ -37,11 +37,23 @@
 body {
     width: 100%;
 }
+footer {
+    height: 150px;
+}
+footer a {
+    color: black;
+}
+footer a:hover {
+    color: white;
+}
 footer p {
     padding-top: 1rem;
 }
 h1 {
     padding-top: 1rem;
+}
+header {
+    height: 100px;
 }
 img {
     display: block;
@@ -62,7 +74,6 @@ section h2 {
 footer,
 header {
     background-color: grey;
-    height: 100px;
     margin: auto;
     text-align: center;
 }

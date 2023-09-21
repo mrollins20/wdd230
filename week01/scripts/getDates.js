@@ -1,6 +1,5 @@
 // Fetches the current date and time.
 const currentDateAndTime = new Date();
-const amPm = 'AM';
 
 // Retrieve the year from the current date.
 let copyrightYear = currentDateAndTime.getFullYear();
@@ -15,11 +14,12 @@ let modificationDay = modificationDate.getDate();
 // Retrieve the values for hours and seconds
 let modificationHours = determineImperialHours(modificationDate.getHours());
 let modificationMinutes = modificationDate.getMinutes();
+let amPm = determineAmPm(modificationDate.getHours());
 
 //Return the copyright year and Modification date.
 document.getElementById("copyright-year").textContent = `${copyrightYear}`;
 
-document.getElementById("lastModified").textContent = `Last Updated: ${modificationMonth}/${modificationDay}/${modificationYear} ${modificationHours}:${modificationMinutes}`;
+document.getElementById("lastModified").textContent = `Last Updated: ${modificationMonth}/${modificationDay}/${modificationYear} ${modificationHours}:${displayTwoDigits(modificationMinutes)} ${amPm}`;
 
 
 // Determine if the number of seconds is less than 10. If so, add a zero before it.
@@ -32,11 +32,31 @@ function displayTwoDigits(seconds) {
     };
 }
 function determineImperialHours(militaryHours) {
-    if (militaryHours < 12) {
+    if (militaryHours == 0) {
+        return 12;
+    }
+    else if (militaryHours < 12) {
         return militaryHours;
+    }
+    else if (militaryHours == 12) {
+        return 12;
     }
     else {
         let imperialHours = militaryHours - 12;
         return imperialHours;
+    };
+}
+function determineAmPm(currentHours24) {
+    if (currentHours24 == 0) {
+        return 'AM';
     }
+    else if (currentHours24 < 12) {
+        return 'AM';
+    }
+    else if (currentHours24 == 12) {
+        return 'PM';
+    }
+    else {
+        return 'PM';
+    };
 }
