@@ -10,9 +10,9 @@
     <meta property="og:description" content="Marc Rollins | WDD 230 - Web Frontend Development | course assignment portal" />
     <meta property="og:url" content="https://mrollins20.github.io/wdd230/" />
     <meta property="og:image" content="https://mrollins20.github.io/wdd230/images/self-portrait.jpg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" defer>
+    <link rel="stylesheet" href="styles/base.css" defer>
+    <link rel="stylesheet" href="styles/larger.css" defer>
     <link rel="icon" href="images/favicon.ico">
     <title>Marc Rollins - WDD 230 - Web Frontend Development</title>
 </head>
@@ -20,15 +20,15 @@
     <header>
         <img src="images/self-portrait-clean.jpg" alt="Self Portrait">
         <h1>Marc K. Rollins</h1>
-        <button id="dark-button">Dark Mode</button>
+        <button aria-label="Website's dark mode theme button." id="dark-button">Dark Mode</button>
     </header>
     <nav>
-        <button id="menu"></button>
+        <button aria-label="Mobile Menu Button" id="menu"></button>
         <div class="navigation">
-            <a class="active" href="#">Home</a>
-            <a href="">Chamber</a>
-            <a href="week01/chamber-site-plan.html">Site Plan</a>
-            <a href="">Form</a>
+            <a aria-label="Link to Course Home Page" class="active" href="#">Home</a>
+            <a aria-label="Link to the Chamber Home Page" href="">Chamber</a>
+            <a aria-label="Link to the Chamber Site Plan" href="week01/chamber-site-plan.html">Site Plan</a>
+            <a aria-label="Link to Form Assignment" href="">Form</a>
         </div>
     </nav>
     <main>
@@ -40,49 +40,49 @@
                 <ul class="week-links">
                     <li class="week">Week 01: </li>
                     <div>
-                        <li><a href="week01/holygrail.html">Holy Grail Activity</a></li>
-                        <li><a href="https://codepen.io/mrollins20/pen/yLGXjLm">Applied JS Activity</a></li>
-                        <li><a href="week01/media-query.html">Media Query Activity</a></li>
+                        <li><a aria-label="Link to week 1 holygrail activity." href="week01/holygrail.html">Holy Grail Activity</a></li>
+                        <li><a aria-label="Link to week 1 codepen JavaScript Activity." href="https://codepen.io/mrollins20/pen/yLGXjLm">Applied JS Activity</a></li>
+                        <li><a aria-label="Link to week 1 Media Query Activity." href="week01/media-query.html">Media Query Activity</a></li>
                     </div>
                 </ul>
                 <ul class="week-links">
                     <li class="week">Week 02:</li>
                     <div>
-                        <li><a href="week02/design.html">Web Design Activity</a></li>
-                        <li><a href="https://codepen.io/mrollins20/pen/XWoVOxK">Hamburger Menu Activity</a></li>
-                        <li><a href="week02/bom.html">DOM Manipulation</a></li>
+                        <li><a aria-label="Link to week 2 Web Design Activity." href="week02/design.html">Web Design Activity</a></li>
+                        <li><a aria-label="Link to week 2 Hamburger Menu Activity." href="https://codepen.io/mrollins20/pen/XWoVOxK">Hamburger Menu Activity</a></li>
+                        <li><a aria-label="Link to week 2 DOM Manipulation Activity." href="week02/bom.html">DOM Manipulation</a></li>
                     </div>
                 </ul>
                 <ul class="week-links">
                     <li class="week">Week 03:</li>
                     <div>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a aria-label="Empty link to future week 3 assignment." href=""></a></li>
+                        <li><a aria-label="Empty link to future week 3 assignment." href=""></a></li>
+                        <li><a aria-label="Empty link to future week 3 assignment." href=""></a></li>
                     </div>
                 </ul>
                 <ul class="week-links">
                     <li class="week">Week 04:</li>
                     <div>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a aria-label="Empty link to future week 4 assignment." href=""></a></li>
+                        <li><a aria-label="Empty link to future week 4 assignment." href=""></a></li>
+                        <li><a aria-label="Empty link to future week 4 assignment." href=""></a></li>
                     </div>
                 </ul>
                 <ul class="week-links">
                     <li class="week">Week 05:</li>
                     <div>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a aria-label="Empty link to future week 5 assignment." href=""></a></li>
+                        <li><a aria-label="Empty link to future week 5 assignment." href=""></a></li>
+                        <li><a aria-label="Empty link to future week 5 assignment." href=""></a></li>
                     </div>
                 </ul>
                 <ul class="week-links">
                     <li class="week">Week 06:</li>
                     <div>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a aria-label="Empty link to future week 6 assignment." href=""></a></li>
+                        <li><a aria-label="Empty link to future week 6 assignment." href=""></a></li>
+                        <li><a aria-label="Empty link to future week 6 assignment." href=""></a></li>
                     </div>
                 </ul>
             </div>
