@@ -1,27 +1,118 @@
+/* Special Variables/Functions */
+:root {
+    /* Light Mode Browser Colors */
+    --active-color: lightsteelblue;
+    --active-hover-background-color: grey;
+    --active-font-color: black;
+    --active-hover-font-color: white;
+    --background-color: grey;
+    --background-secondary-color: darkgrey;
+    --background-tertiary-color: grey;
+    --background-hover-color: grey;
+    --background-dark-hover-color: grey;
+    --border-color: black;
+    --font-color: black;
+    --font-hover-color: grey;
+    --main-color: darkgrey;
+    --white-color: white;
+}
 /* Id Selectors */
 #activities-card.card-body {
     display: grid;
     grid-template-columns: 2fr 3fr;
     width: 100%;
 }
+#dark-button {
+    background-color: var(--active-color);
+    height: 50px;
+    margin: auto;
+    margin-right: 2rem;
+    width: 100px;
+}
+#menu::before {
+    display: block;
+	content: "☰";
+    margin: auto 1rem;
+    max-width: 80%;
+}
+#menu.open::before {
+    display: block;
+	content: "✖";
+    margin: auto 1rem;
+    max-width: 80%;
+}
 /* Class Selectors */
 .active {
-    background-color: lightsteelblue;
+    background-color: var(--active-color);
+    color: var(--active-font-color);
 }
 .card {
-    background-color: lightgrey;
-    border: 1px solid black;
+    background-color: var(--background-color);
+    border: 1px solid var(--black-color);
     border-radius: 5px;
     height: 100%;
+    margin: 1rem;
+    max-height: 600px;
+    transition: all 1s;
 }
 .card-body {
-    background-color: white;
+    background-color: var(--main-color);
     border-radius: 5px;
     margin: 0.5rem;
     padding: 0.5rem 0;
+    transition: all 1s;
+}
+.dark {
+    /* Color Palette: #bb86f8 #9731ec #2e2e2e #212121 #121212 #1ae0c9 #a7a7a7 #630300 #330000 */
+    /* Active Element Colors */
+    --active-color: #1ae0c9;
+    --active-hover-background-color: #a7a7a7;
+    --active-font-color: #121212;
+    --active-hover-font-color: #121212;
+    /* Basic Colors */
+    --background-color: #121212;
+    --background-secondary-color: #212121;
+    --background-tertiary-color: #a7a7a7;
+    --background-hover-color: #a7a7a7;
+    --background-dark-hover-color: #bb86f8;
+    --border-color: #bb86f8;
+    --font-color: #a7a7a7;
+    --font-dark-color: #121212;
+    --font-hover-color: #121212;
+    --main-color: #2e2e2e;
+    --white-color: white;
+    /* Document Color Adjustments */
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+.dark main {
+    background-color: var(--background-secondary-color);
+    border-radius: 5px;
 }
 .divider {
     display: none;
+}
+.navigation {
+    display: none;
+    font-size: 1.5rem;
+}
+.navigation a {
+    max-width: 80%;
+}
+.navigation a:not(.active) {
+    background-color: var(--main-color);
+    max-width: 80%;
+}
+.open {
+    display: block;
+    flex-direction: column;
+}
+.open li {
+	display: flex;
+	width: 100%;
+}
+.open li a {
+	display: block;
 }
 .week {
     height: 25px;
@@ -43,19 +134,37 @@ body {
     margin: auto;
     text-align: center;
     width: 100%;
+
+    transition: all 1s;
+}
+button {
+    background-color: var(--background-secondary-color);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 80%;
 }
 footer {
     margin: 1rem auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+h2 {
+    margin-left: 1rem;
+    max-height: 50px;
 }
 header {
+    background-color: var(--background-color);
     display: flex;
     flex-direction: row;
     margin: 0 auto;
 }
 li {
     align-items: center;
-    background-color: lightgray;
+    background-color: var(--background-tertiary-color);
     border-radius: 5px;
+    color: var(--font-dark-color);
     display: flex;
     flex: auto;
     flex-direction: row;
@@ -65,38 +174,39 @@ li {
     max-width: 100px;
 }
 li a {
-    background-color: lightgray;
+    background-color: var(--background-tertiary-color);
     border-radius: 5px;
-    color: black;
+    color: var(--font-dark-color);
     display: block;
     max-width: 100px;
 }
 main {
     display: grid;
     gap: 1rem;
-    margin: 1rem auto;
+    grid-template-rows: auto 3fr 3fr;
+    height: 100%;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
     width: 85%;
 }
 nav {
-    background-color: lightgrey;
-    border: 2px solid black;
+    background-color: var(--background-color);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     margin: 0 auto;
-    max-width: 1500px;
-    width: 100%;
+    max-width: 810px;
+    width: 80%;
 }
 nav a {
-    border: 2px solid black;
-    color: black;
+    border: 3px solid var(--border-color);
+    color: var(--font-color);
     display: block;
     height: 25px;
     justify-content: center;
     margin: auto;
     padding-top: 5px;
     text-align: center;
-    width: 100%;
 }
 ul {
     list-style: none;
@@ -106,14 +216,16 @@ ul {
 /* MultiElement Selectors */
 footer,
 header {
-    background-color: lightgrey;
+    background-color: var(--background-secondary-color);
     max-width: 1500px;
     width: 100%;
 }
 header img{
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
     margin: 1rem auto;
     margin-right: 1rem;
-    max-height: 100px;
+    max-height: 150px;
 }
 header h1 {
     margin: auto;
@@ -121,7 +233,16 @@ header h1 {
     text-align: left;
 }
 li a:hover,
-nav a:hover {
-    background-color: gray;
-    color: white;
+#dark-button:hover {
+    background-color: var(--background-dark-hover-color);
+    color: var(--active-hover-font-color);
+}
+nav a:hover,
+.navigation a:not(.active):hover {
+    background-color: var(--background-hover-color);
+    color: var(--font-hover-color);
+}
+.active:hover {
+    background-color: var(--active-hover-background-color);
+    color: var(--active-hover-font-color);
 }
