@@ -1,0 +1,38 @@
+@media screen and (min-width: 900px) {
+    /* Media Queries and Imports */
+    /* Id Selectors */
+    #join-button {
+        font-size: 2.5em;
+        height: 15%;
+        min-width: 200px;
+        width: 50%;
+    }
+    #menu {
+        display: none;
+    }
+    /* Class Selectors */
+    .navigation {
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .navigation a {
+        text-align: center;
+        display: block;
+        margin: auto;
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+    /* Element Selectors */
+    header {
+        margin-bottom: 0;
+    }
+    nav {
+        margin-top: 0;
+        width: 90%;
+    }
+    /* MultiElement Selectors */
+}
