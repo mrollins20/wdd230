@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Chamber Home Page">
   <meta name="author" content="Marc Rollins">
@@ -12,9 +12,9 @@
   <meta property="og:description" content="Unofficial Sahuarita Chamber of Commerce Home Page created by Marc Rollins">
   <meta property="og:url" content="https://mrollins20.github.io/wdd230/chamber/index.html">
   <meta property="og:image" content="https://mrollins20.github.io/wdd230/images/self-portrait.jpg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" auto>
-  <link rel="stylesheet" href="styles/base.css" auto>
-  <link rel="stylesheet" href="styles/larger.css" auto>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" media="all">
+  <link rel="stylesheet" href="styles/base.css" media="all">
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 900px)">
   <title>
     Marc Rollins - BYUI WDD230 - Sahuarita Chamber of Commerce Home Page
   </title>
@@ -36,26 +36,27 @@
     </div>
   </nav>
   <main>
-    <section class="card" id="main-banner">
+    <div class="card" id="main-banner">
       <div id="hero-image"><img src="images/desert-image2-trim.jpg" alt=""></div>
-      <button aria-label="Link to Join Sahuarita Chamber of Commerce" id="join-button" href="join.html">Join the Chamber</button>
-    </section>
-    <section class="card" id="current-events">
+      <a id="join-button" href="join.html"><button aria-label="Link to Join Sahuarita Chamber of Commerce">Join the Chamber</button></a>
+    </div>
+    <div class="card" id="current-events">
       <h3>Events</h3>
       <div class="divider"></div>
       <div class="card-placeholder"></div>
-    </section>
-    <section class="card" id="weather">
+    </div>
+    <div class="card" id="weather">
       <h3>Weather</h3>
       <div class="divider"></div>
       <div class="card-placeholder"></div>
-    </section>
-    <section class="card" id="spotlights">
+    </div>
+    <div class="card" id="spotlights">
       <h3>Member Spotlights</h3>
+      <div class="divider"></div>
       <div class="spotlight-card"></div>
       <div class="spotlight-card"></div>
       <div class="spotlight-card"></div>
-    </section>
+    </div>
   </main>
   <footer>
     <p>&copy; <span id="copyright-year"></span> | <a class="course-link" href="../index.html">Marc Rollins</a> | Arizona

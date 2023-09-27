@@ -16,10 +16,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Id Selectors */
-#current-events,
-#weather {
-    grid-template-rows: 1fr 1fr 3fr;
-}
+
 #current-events .card-placeholder,
 #weather .card-placeholder {
     min-height: 200px;
@@ -33,12 +30,7 @@
     z-index: 0;
 }
 #join-button {
-    background-color: var(--button-color);
-    border: 2px var(--base-color) solid;
     border-radius: 5px;
-    color: white;
-    font-family: 'Roboto Slab';
-    font-size: 1.5rem;
     grid-column: 1/2;
     grid-row: 1/2;
     height: 20%;
@@ -47,10 +39,26 @@
     width: 50%;
     z-index: 1;
 }
+#join-button button {
+    background-color: var(--button-color);
+    border: 2px var(--base-color) solid;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto Slab';
+    font-size: 1.5rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 100%;
+    margin: auto;
+    text-decoration: none;
+    width: 100%;
+    z-index: 1;
+}
 #join-button:hover {
     background-color: var(--hover-color);
 }
 #main-banner {
+    grid-template-rows: 1fr;
     height: 80%;
 }
 #menu::before {
@@ -72,8 +80,7 @@
 }
 #spotlights {
     gap: 1rem;
-    grid-template-rows: 100px 1fr 1fr 1fr;
-    padding-bottom: 1rem;
+    grid-template-rows: 48px 21px 1fr 1fr 1fr;
 }
 /* Class Selectors */
 .active {
@@ -81,14 +88,20 @@
     color: var(--active-font-color);
 }
 .card {
+    align-items: center;
     background-color: var(--base-color);
     border-radius: 3px;
     color: var(--font-color);
     display: grid;
     gap: 1rem;
+    grid-template-rows: 48px 21px auto;
     height: 100%;
     margin: 1rem auto;
     width: 100%;
+}
+.card h3 {
+    margin: 1rem auto;
+    padding-top: 1rem;
 }
 .course-link {
     color: var(--font-color);
@@ -138,6 +151,7 @@
 .spotlight-card,
 .card-placeholder {
     background-color: var(--base-color2);
+    border-radius: 3px;
     height: 80%;
     margin: 0.5rem auto;
     width: 90%;
