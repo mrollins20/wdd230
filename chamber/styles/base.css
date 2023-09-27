@@ -14,6 +14,7 @@
     --font-color: white;
     --hover-color: orange;
     font-family: Arial, Helvetica, sans-serif;
+    transition: 0.25s ease-in-out;
 }
 /* Id Selectors */
 
@@ -144,8 +145,12 @@
     flex-direction: column;
 }
 .open a {
+    border: 2px solid var(--hover-color);
 	display: block;
-    margin: 1rem auto;
+    height: 50px;
+    margin: auto;
+    padding-top: 1rem;
+    text-justify: center;
     width: 100%;
 }
 .spotlight-card,
