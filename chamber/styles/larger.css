@@ -10,6 +10,9 @@
         --hover-color: orange;
     }
     /* Id Selectors */
+    #hero-image {
+        height: 500px;
+    }
     #join-button {
         background-color: var(--button-color);
         font-size: 2.5em;
