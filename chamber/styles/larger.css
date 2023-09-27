@@ -1,5 +1,14 @@
 @media screen and (min-width: 900px) {
     /* Media Queries and Imports */
+    * {
+        --active-color: #a7a7a7;
+        --active-font-color: black;
+        --base-color: #330000;
+        --base-color2: #630300;
+        --button-color: rgba(255, 165, 0, 0.75);
+        --font-color: white;
+        --hover-color: orange;
+    }
     /* Id Selectors */
     #join-button {
         font-size: 2.5em;
