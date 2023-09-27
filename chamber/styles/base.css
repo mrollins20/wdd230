@@ -29,15 +29,8 @@
     display:block;
     grid-column: 1/2;
     grid-row: 1/2;
-    z-index: 0;
-}
-img{
-    display:block;
-    grid-column: 1/2;
-    grid-row: 1/2;
     height: 100%;
-    margin: auto;
-    width: 100%;
+    z-index: 0;
 }
 #join-button {
     background-color: var(--button-color);
@@ -92,12 +85,19 @@ img{
 }
 .card {
     background-color: var(--base-color);
+    border-radius: 3px;
     color: var(--font-color);
     display: grid;
     gap: 1rem;
     height: 100%;
     margin: 1rem auto;
     width: 100%;
+}
+.course-link {
+    color: var(--font-color);
+}
+.course-link:hover {
+    color: var(--active-color);
 }
 .divider {
     background-color: var(--hover-color);
@@ -141,6 +141,7 @@ img{
 .spotlight-card,
 .card-placeholder {
     background-color: var(--base-color2);
+    height: 80%;
     margin: 0.5rem auto;
     width: 90%;
 }
@@ -148,11 +149,20 @@ img{
 button {
     margin: 1rem auto;
 }
+img{
+    border-radius: 3px;
+    display:block;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 100%;
+    margin: auto;
+    width: 100%;
+}
 main {
     display: grid;
     gap: 1rem;
     grid-template-rows: 1fr 1fr 1fr 2fr;
-    height: auto;
+    height: 100%;
     margin: auto;
     margin-bottom: 1rem;
     padding-bottom: 2rem;
@@ -160,6 +170,9 @@ main {
 }
 nav {
     display: grid;
+}
+nav a {
+    border-radius: 3px;
 }
 /* MultiElement Selectors */
 body,
@@ -173,6 +186,7 @@ nav {
 header,
 footer {
     background-color: var(--base-color);
+    border-radius: 3px;
     color: var(--font-color);
     padding: 1rem 0;
     width: 90%;
