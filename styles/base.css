@@ -17,9 +17,10 @@
     --white-color: white;
 }
 /* Id Selectors */
-#activities-card.card-body {
+#activities-card.card-body p {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: auto;
+    height: auto;
     width: 100%;
 }
 #dark-button {
@@ -41,6 +42,10 @@
     margin: auto 1rem;
     max-width: 80%;
 }
+#weather-card .card-body {
+    height: 100%;
+    max-height: 640px;
+}
 /* Class Selectors */
 .active {
     background-color: var(--active-color);
@@ -52,12 +57,12 @@
     border-radius: 5px;
     height: 100%;
     margin: 1rem;
-    max-height: 600px;
     transition: all 1s;
 }
 .card-body {
     background-color: var(--main-color);
     border-radius: 5px;
+    height: auto;
     margin: 0.5rem;
     padding: 0.5rem 0;
     transition: all 1s;
@@ -125,6 +130,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100%;
 }
 /* Element Selectors */
 a {
@@ -170,15 +176,16 @@ li {
     flex-direction: row;
     justify-content: center;
     margin: 0.5rem;
+    padding: 1rem;
     text-align: center;
-    max-width: 100px;
+    width: 100%;
 }
 li a {
     background-color: var(--background-tertiary-color);
     border-radius: 5px;
     color: var(--font-dark-color);
     display: block;
-    max-width: 100px;
+    width: 100%;
 }
 main {
     display: grid;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD230 Lazy Loading Activity">
+    <meta name="author" content="Marc Rollins">
+    <meta name="type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <title>Lazy Image Loading</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Loading</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="https://via.placeholder.com/400x600/" alt="placerholder image" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/400x600/" alt="placerholder image" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/400x600/" alt="placerholder image" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/400x600/" alt="placerholder image" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/400x600/" alt="placerholder image" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/400x600/" alt="placerholder image" loading="lazy">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> | <a href="../index.html">Marc Rollins</a> | Arizona</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+</body>

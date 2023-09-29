@@ -1,23 +1,11 @@
 @media screen and (min-width: 900px) {
   /* Id Selectors */
-  #activities-card.card-body {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-  }
   #menu {
     display: none;
   }
-  #weather-card.card-body {
-    height: 448px;
-  }
-
   /* Class Selectors */
   .card {
     margin: 1rem;
-  }
-  .card-body {
-    height: 100%;
-    max-height: 450px;
   }
   .divider {
     background-color: var(--border-color);

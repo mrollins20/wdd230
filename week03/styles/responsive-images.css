@@ -1,0 +1,21 @@
+* {
+    margin: auto;
+    text-align: center;
+}
+
+.hero img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 500px) {
+    .hero img {
+        max-width: 1000px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .hero img {
+        max-width: 1500px;
+    }
+}
