@@ -39,4 +39,12 @@ thead {
 }
 thead tr:last-child th:first-child ~ th {
     background-color: var(--dark-grey);
+    border-top: 1px solid var(--bord);
+}
+thead tr :last-child {
+    border-right: 1px solid var(--bord);
+}
+td:not(:first-child) {
+    font-variant-emoji: text;
+    font-size: 1.5rem;
 }
